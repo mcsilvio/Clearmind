@@ -1,7 +1,14 @@
-<?php 
-$this->pageTitle = 'Business Name: or something goes here';
-$this->description = 'Describe the page shortly here'; 
+<!doctype html>
+<html>
+<head>
+<title>ClearMind</title>
+<meta name="description" content="Hierarchical Note Taking" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" type="text/css" rel="stylesheet" />
 
+</head>
+<body>
+<?php 
 Yii::app()->clientScript->registerScript('liveSearch','
 $("#nameField").bind("keyup", function(e) {
 	//on letter number
@@ -77,3 +84,6 @@ $this->widget('application.widgets.JsTreeWidget',
 <br />
 <input type="text" name="descriptionField" id="descriptionField" />
 <input type="hidden" name="idField" id="idField" />
+
+</body>
+</html>

@@ -1,15 +1,4 @@
-<?php 
-$this->pageTitle = 'Funisher: Terms & Conditions';
-$this->description = 'Our terms and conditions are not so fun.'; 
-?>
 
-
-<?php
-$this->pageTitle=Yii::app()->name . ' - Error';
-$this->breadcrumbs=array(
-	'Terms and Conditions',
-);
-?>
 
 <h1>Terms and Conditions</h1>
 

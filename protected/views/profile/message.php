@@ -1,7 +1,3 @@
-<?php 
-$this->pageTitle = 'Funisher: Message';
-$this->description = 'Funisher has something to say to you.'; 
-?>
 
 
 <?php

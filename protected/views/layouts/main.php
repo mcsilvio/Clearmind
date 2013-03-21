@@ -1,10 +1,10 @@
-<?php Yii::app()->getClientScript()->registerCssFile('http://fonts.googleapis.com/css?family=Open+Sans'); ?>
+
 
 
 <!doctype html>
 <html>
 <head>
-<title>ClearMind - Home</title>
+<title>ClearMind - <?php echo ucfirst(Yii::app()->controller->action->id); ?></title>
 <meta name="description" content="Hierarchical Note Taking" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" type="text/css" rel="stylesheet" />

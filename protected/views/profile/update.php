@@ -1,7 +1,4 @@
-<?php 
-$this->pageTitle = 'Funisher: Profile';
-$this->description = 'Keep your profile up to date.'; 
-?>
+
 
 
 

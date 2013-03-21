@@ -1,8 +1,3 @@
-<?php 
-$this->pageTitle = 'Funisher: Profile';
-$this->description = 'Keep your profile up to date.'; 
-?>
-
 
 
 <h1><?php echo $model->username; ?>'s Profile</h1>

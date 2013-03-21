@@ -1,7 +1,3 @@
-<?php 
-$this->pageTitle = 'Funisher: Change Your Password';
-$this->description = 'Security is critical!'; 
-?>
 
 
 

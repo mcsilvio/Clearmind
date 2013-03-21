@@ -1,7 +1,3 @@
-<?php 
-$this->pageTitle = 'Funisher: Privacy Policy';
-$this->description = 'Your privacy is critical.'; 
-?>
 
 
 <h1>Privacy Policy</h1>

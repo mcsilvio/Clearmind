@@ -1,7 +1,4 @@
-<?php 
-$this->pageTitle = 'Funisher: Your Email Preferences';
-$this->description = 'We won\t message you inappropriately.'; 
-?>
+
 
 
 <h2>Email Preferences</h2>

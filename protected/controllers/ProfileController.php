@@ -5,23 +5,23 @@ class ProfileController extends Controller
 
 	public function init()
 	{
-		$uri = Yii::app()->baseUrl . '/css/profile.css';
-		Yii::app()->clientScript->registerCssFile($uri, 'screen, projection');
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/global.css');
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/userAndProfile.css');
 		return parent::init();
 	}
-	
+
 	public function filters()
 	{
 		return array( 'accessControl' ); // perform access control for CRUD operations
 	}
-	
+
 	public function accessRules()
 	{
 		return array(
 				array('allow', // allow authenticated users to access all actions
 						'users'=>array('@'),
 				),
-				
+
 				array('allow',
 						'actions'=>array('emailPreferences'),
 						'users'=>array('*'),
@@ -49,7 +49,7 @@ class ProfileController extends Controller
 	 */
 	public function actionUpdate()
 	{
-		
+
 		$model=User::model()->findByPk(Yii::app()->user->id);
 		$profile = $model->profile;
 
@@ -57,14 +57,14 @@ class ProfileController extends Controller
 		{
 			$model->attributes=$_POST['User'];
 			$profile->attributes = $_POST['Profile'];
-			
+				
 			if($_FILES['avatar']['name'] != ""){
 				$newImage = $this->resizeAndConvertImage($_FILES['avatar']['tmp_name']);
 				imagepng($newImage, YiiBase::getPathOfAlias('webroot') . '/images/avatars/' . $model->id . '.png');
 			}
 			elseif($_POST['clear'] == 'true')
-				$this->clearAvatar();
-			
+			$this->clearAvatar();
+				
 			if($model->validate() && $profile->validate()){
 				$model->save();
 				$profile->save();
@@ -75,23 +75,23 @@ class ProfileController extends Controller
 						'model'=>$model, 'profile' => $profile
 				));
 			}
-				
+
 		}
 
 		$this->render('update',array(
 				'model'=>$model, 'profile' => $profile
 		));
 	}
-	
+
 	function resizeAndConvertImage($srcFile, $maxSize = 100) {
 		list($width_orig, $height_orig, $type) = getimagesize($srcFile);
-	
+
 		// Get the aspect ratio
 		$ratio_orig = $width_orig / $height_orig;
-	
+
 		$width  = $maxSize;
 		$height = $maxSize;
-	
+
 		// resize to height (orig is portrait)
 		if ($ratio_orig < 1) {
 			$width = $height * $ratio_orig;
@@ -100,57 +100,57 @@ class ProfileController extends Controller
 		else {
 			$height = $width / $ratio_orig;
 		}
-		
+
 		return Util::imageToPNG($srcFile, $type);
 
 	}
-	
+
 	public function actionChangePassword()
 	{
-	    $model = new ChangePasswordForm;
-	
-	    if(isset($_POST['ChangePasswordForm']))
-	    {
-	    	
-	        $model->attributes=$_POST['ChangePasswordForm'];
-	        if($model->validate())
-	        {
-	        	//change password
-	        	$user = User::model()->findByPk(Yii::app()->user->id);
-	        	$user->password = $user->createHash($model->password);
-	            $user->save();
-	            
-	            //inform user
-	            $this->render('message', array('title' => 'Password Changed', 'message' => 'You have successfully changed your password.'));
-	            
-	            return;
-	        }
-	    }
-	    $this->render('changePassword',array('model'=>$model));
+		$model = new ChangePasswordForm;
+
+		if(isset($_POST['ChangePasswordForm']))
+		{
+
+			$model->attributes=$_POST['ChangePasswordForm'];
+			if($model->validate())
+			{
+				//change password
+				$user = User::model()->findByPk(Yii::app()->user->id);
+				$user->password = $user->createHash($model->password);
+				$user->save();
+				 
+				//inform user
+				$this->render('message', array('title' => 'Password Changed', 'message' => 'You have successfully changed your password.'));
+				 
+				return;
+			}
+		}
+		$this->render('changePassword',array('model'=>$model));
 	}
-	
+
 	public function actionEmailPreferences($cd){
-	
-	
-	$user = User::model()->find('activationcode = \'' . $cd . '\'');
-	$profile= $user->profile;
-	
-	if(isset($_POST['Profile'])){
-	
-		$profile->emailNewsLetter = $_POST['Profile']['emailNewsLetter'];
-		$profile->emailUpdates = $_POST['Profile']['emailUpdates'];
-		$profile->daily_emails = $_POST['Profile']['daily_emails'];
-		
-		$profile->save();
-		$this->render('message', array('title' => 'Email Preferences Changed', 'message' => 'You have successfully changed your email preferences.'));
-		return;
+
+
+		$user = User::model()->find('activationcode = \'' . $cd . '\'');
+		$profile= $user->profile;
+
+		if(isset($_POST['Profile'])){
+
+			$profile->emailNewsLetter = $_POST['Profile']['emailNewsLetter'];
+			$profile->emailUpdates = $_POST['Profile']['emailUpdates'];
+			$profile->daily_emails = $_POST['Profile']['daily_emails'];
+
+			$profile->save();
+			$this->render('message', array('title' => 'Email Preferences Changed', 'message' => 'You have successfully changed your email preferences.'));
+			return;
+		}
+
+
+
+		$this->render('updateEmailPrefs', array('model' =>$profile, 'email' => $user->email));
+
 	}
-	
-	
-	
-	$this->render('updateEmailPrefs', array('model' =>$profile, 'email' => $user->email));
-	
-	}
-	
-	
+
+
 }

@@ -1,7 +1,4 @@
-<?php 
-$this->pageTitle = 'Funisher: Registration';
-$this->description = 'Register to do all the cool stuff.'; 
-?>
+
 
 
 <?php $this->pageTitle=Yii::app()->name . ' - Register';

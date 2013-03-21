@@ -9,10 +9,12 @@ class CategoryController extends BaseController
 
     public $layout = false;
 
-    public function   init()
-    {
-        parent::init();
-    }
+public function init()
+	{
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/global.css');
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/clearmind.css');
+		return parent::init();
+	}
 
     public function behaviors()
     {

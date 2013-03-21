@@ -1,8 +1,3 @@
-<?php 
-$this->pageTitle = 'Funisher: Forget Your Password?';
-$this->description = 'Don\'t worry, my child.'; 
-?>
-
 
 <?php
     Yii::app()->clientScript->registerScript('helloscript',"

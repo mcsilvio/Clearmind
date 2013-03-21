@@ -79,7 +79,7 @@ EOD;
         Yii::app()->clientScript->registerCoreScript('jquery');
 
         //uncomment to register bootstrap css if you have not already included  it (optional),or else you will have to style the html by yourself.
-        Yii::app()->clientScript->registerCssFile($baseUrl . '/js_plugins/bootstrap/css/bootstrap.css');
+        //Yii::app()->clientScript->registerCssFile($baseUrl . '/js_plugins/bootstrap/css/bootstrap.css');
         Yii::app()->clientScript->registerCoreScript('cookie');
         Yii::app()->clientScript->registerScript(__CLASS__ . 'jstree_behavior_params', $jstree_behavior_js, CClientScript::POS_END);
 

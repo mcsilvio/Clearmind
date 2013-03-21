@@ -3,7 +3,12 @@
 class UserController extends Controller
 {
 
-
+	public function init()
+	{
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/global.css');
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/userAndProfile.css');
+		return parent::init();
+	}
 
 	/**
 	 * Displays the login page
