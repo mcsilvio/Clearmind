@@ -50,9 +50,21 @@ $("#descriptionField").bind("keyup", function(e) {
 });
 		');
 
+?>
 
+<div id="account">
+				<?php if(!Yii::app()->user->isGuest) : ?>
+			
+					
+					Logged In:
+					<?php echo CHtml::link(Yii::app()->user->name, array('profile/index')); ?>
+					<?php echo ' ( ' . CHtml::link('Log Out', array('user/logout')) . ' ) '; ?>		
+				<?php else: ?>	
+				<div style="height: 30px;display:block;width: 600px;"> &nbsp; </div>
+				<?php endif; ?>
+			</div>
 
-
+<?php 
 $this->widget('application.widgets.JsTreeWidget',
                                array('modelClassName' => 'Category',
                                            'jstree_container_ID' => 'Category-wrapper',

@@ -2,10 +2,7 @@
 
 class UserController extends Controller
 {
-	public function actionIndex()
-	{
-		$this->render('index');
-	}
+
 
 
 	/**
@@ -28,7 +25,7 @@ class UserController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
-				$this->redirect(array('/game/index'));
+				$this->redirect(array('/category/tree'));
 		}
 
 		// display the login form
@@ -263,6 +260,13 @@ class UserController extends Controller
 
 	}
 
+	public function actionHelp(){
+		$this->render('help');
+	}
+	
+	public function actionError(){
+		$this->render('error');
+	}
 
 
 }

@@ -4,7 +4,7 @@ $this->description = 'Keep your profile up to date.';
 ?>
 
 
-<div class="column1">
+
 <h1>Update <?php echo $model->username; ?></h1>
 
 <?php 
@@ -138,16 +138,3 @@ Yii::app()->clientScript->registerScript('avatarPreview','
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
-</div>
-
-<div class="column2">
-
-<h1>Help</h1>
-
-<p>
-These are your personal profile details. Please keep them up-to-date. Click 'Update' to change them.
-</p>
-
-</div>
-
-<div style="clear: both"></div>
