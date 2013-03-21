@@ -1,0 +1,67 @@
+#account{
+	float: right;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 15px; 
+	width: 500px;
+	text-align: right;
+	
+}
+
+.mainmenu {
+	clear: right;
+	height: 70px;
+	
+	line-height: 70px;
+	
+}
+
+ .top{
+	width: 400px;
+	float: right;
+}
+
+.bottom{
+	width: 480px;
+	margin: auto;
+	border: 3px solid gray;
+}
+
+.mainmenu ul {
+	list-style-type: none;
+	display: inline;
+}
+
+.mainmenu li {
+	text-align: center;
+	width: 120px;
+	float: right;
+	//padding-right: 32px; 
+	//padding-left: 32px;
+}
+
+.mainmenu a { 
+	
+	display: block; 
+	text-decoration: none;
+	color: #ccc; 
+	font-size: 16px;
+}
+
+.mainmenu a:hover {
+	color: #FFF;
+}
+
+
+
+.mainmenu .active{
+	background: #2d2e2d;
+}
+
+.mainmenu .active a{
+	color: #fff;
+}
+
+#logo img {
+	border: 0px;
+}

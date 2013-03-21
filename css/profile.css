@@ -1,0 +1,16 @@
+.avatar {
+	margin-top: -2px;
+	max-width: 150px;
+	max-height: 150px;
+	vertical-align: middle;
+}
+
+.column1{
+	float: left;
+	width: 57%;
+}
+
+.column2{
+	float: right;
+	width: 39%;
+}

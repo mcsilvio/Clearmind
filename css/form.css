@@ -1,0 +1,56 @@
+.errorSummary {
+	background: #b77;
+	border: 3px solid #e44;
+	padding: 8px;
+	width: 400px; //
+	margin: 0 auto;
+}
+
+form{
+	padding-top: 20px;
+}
+
+.errorSummary p {
+	margin-bottom: 10px;
+}
+
+.errorSummary ul {
+	list-style-type: none;
+}
+
+.row {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.row label.error {
+	font-weight: bold;
+	color: #fdd;
+}
+
+.row .errorMessage {
+	color: #e44;
+}
+
+input, textarea, select, select option {
+	color: #000;
+	font-size: 12px;
+	padding: 4px 2px;
+	margin-top: 7px;
+	//border: solid 1px #aacfe4;
+	width: 200px;
+}
+
+textarea{
+	width: 400px;
+	height: 200px;	
+}
+
+input[type=checkbox]{
+	width: 20px;
+}
+
+input[type=file]{
+	color: #fff;
+	width: 300px;
+}
