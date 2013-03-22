@@ -1,5 +1,5 @@
 
-<div class="loginForm border">
+<div class="form login border">
 	<?php $form=$this->beginWidget('CActiveForm', array(
 			'id'=>'login-form',
 			'enableAjaxValidation'=>false,
