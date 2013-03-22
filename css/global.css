@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  text-align: center;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left, right, from(#5A9AF7), to(#2F2727));
+  background-image: -webkit-linear-gradient(left, #5A9AF7, #2F2727);
+  background-image:    -moz-linear-gradient(left, #5A9AF7, #2F2727);
+  background-image:      -o-linear-gradient(left, #5A9AF7, #2F2727);
+  background-image:         linear-gradient(to right, #5A9AF7, #2F2727);
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  
+}
+
+a:link {color:#fff;}      /* unvisited link */
+a:visited {color:#fff;}  /* visited link */
+a:hover {color:#fff;}  /* mouse over link */
+a:active {color:#fff;}  /* selected link */ 

@@ -1,12 +1,5 @@
 
 
-
-<?php $this->pageTitle=Yii::app()->name . ' - Register';
-$this->breadcrumbs=array(
-	'Register',
-);
-?>
-
 <?php
     Yii::app()->clientScript->registerScript('helloscript',"
         $('#submitButton').click(function() {
@@ -22,8 +15,6 @@ $this->breadcrumbs=array(
 ?>
 
 
-
-<h1>Register</h1>
 
 
 <?php if(Yii::app()->user->hasFlash('register')): ?>

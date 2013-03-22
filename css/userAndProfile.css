@@ -1,0 +1,53 @@
+.header{
+	height: 30%;
+	
+}
+
+.middle{
+	height: 60%;
+}
+
+.footer{
+	height: 10%;
+}
+
+h1{
+
+	font-size: 90px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.loginForm{
+	width: 400px;
+	height: 260px;
+	font-size: 20px;
+	background-color: rgba(255, 255, 255, 0.4);
+	margin: 0 auto;
+}
+
+.label{
+	margin-top: 20px;	
+}
+
+.formTextField{
+	height: 40px;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.submitButton{
+	height: 40px;
+	width: 150px;
+}
+
+.border{
+  resize: none;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  overflow: auto;
+}

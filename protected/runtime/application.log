@@ -8057,3 +8057,272 @@ Stack trace:
 REQUEST_URI=/clearmind.com/user/css/style.css
 HTTP_REFERER=http://localhost:8888/clearmind.com/user/help
 ---
+2013/03/21 05:01:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('user/css/style....')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/user/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/user/register
+---
+2013/03/21 05:01:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('user/css/style....')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/user/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/user/login
+---
+2013/03/21 05:01:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('category/css/st...')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/category/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/03/22 03:46:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('profile/css/sty...')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/profile/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
+---
+2013/03/22 03:46:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatars/no-image.png".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('images/avatars/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/images/avatars/no-image.png
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
+---
+2013/03/22 03:46:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('user/css/style....')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/user/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/user/login
+---
+2013/03/22 03:46:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('user/css/style....')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/user/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/user/login
+---
+2013/03/22 03:47:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('category/css/st...')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/category/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/03/22 03:47:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatars/no-image.png".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('images/avatars/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/images/avatars/no-image.png
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
+---
+2013/03/22 03:47:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('profile/css/sty...')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/profile/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
+---
+2013/03/22 03:47:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('user/css/style....')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/user/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/user/login
+---
+2013/03/22 03:47:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('category/css/st...')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/category/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/03/22 03:49:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('category/css/st...')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/category/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/03/22 03:49:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/
+---
+2013/03/22 03:51:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/
+---
+2013/03/22 03:51:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/
+---
+2013/03/22 03:52:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/
+---
+2013/03/22 03:52:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/
+---
+2013/03/22 03:53:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/
+---
+2013/03/22 03:55:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/
+---
+2013/03/22 04:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/
+---
+2013/03/22 04:05:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/
+---
+2013/03/22 04:09:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/
+---
+2013/03/22 04:10:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/
+---
+2013/03/22 04:12:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/
+---
+2013/03/22 04:54:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('category/css/st...')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/category/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/03/22 04:54:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('category/css/st...')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/category/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
