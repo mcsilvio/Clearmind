@@ -8326,3 +8326,63 @@ Stack trace:
 REQUEST_URI=/clearmind.com/category/css/style.css
 HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
 ---
+2013/03/22 05:34:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('category/css/st...')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/category/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/03/22 05:34:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatars/no-image.png".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('images/avatars/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/images/avatars/no-image.png
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
+---
+2013/03/22 05:34:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatars/no-image.png".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('images/avatars/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/images/avatars/no-image.png
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/update
+---
+2013/03/22 05:34:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatars/no-image.png".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('images/avatars/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/images/avatars/no-image.png
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
+---
+2013/03/22 05:35:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('category/css/st...')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/category/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/03/24 06:59:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('category/css/st...')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmind.com/category/css/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---

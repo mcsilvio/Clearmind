@@ -6,21 +6,15 @@
  */
 class RegisterForm extends User {
 	public $verifyPassword;
-	public $verifyCode;
-	public $termsAgreed;
-	public $emailNewsLetter;
-	public $emailUpdates;
 	
 	public function rules() {
 		$rules = array(
-			array('username, password, verifyPassword, termsAgreed, email, verifyCode', 'required'),
+			array('username, password, verifyPassword, email', 'required'),
 			array('username', 'length', 'max'=>20, 'min' => 3,'message' => "Incorrect username (length between 3 and 20 characters)."),
 			array('password, verifyPassword', 'length', 'max'=>20, 'min' => 4,'message' => "Incorrect password (minimal length 4 symbols)."),
 			array('email', 'email'),
-			array('verifyCode', 'captcha', 'on'=>'insert', 'message' => 'Incorrect Captcha entered.'),
-			array('termsAgreed', 'boolean', 'falseValue'=>'true', 'message' =>'You must read and check "Terms & Conditions"'),
-			array('emailNewsLetter', 'boolean'),
-			array('emailUpdates', 'boolean'),
+			
+			
 			array('username', 'unique', 'message' => "This user's name already exists."),
 			array('email', 'unique', 'message' => "This user's email address already exists."),
 			array('verifyPassword', 'compare', 'compareAttribute'=>'password', 'message' => "Retype Password is incorrect."),
@@ -33,12 +27,8 @@ class RegisterForm extends User {
 	public function attributeLabels() {
 		return array(
 				'username' => 'Username',
-				'password' => 'Password',
-				'emailNewsLetter' => 'Join Email Newsletter',
-				'emailUpdates' => 'Receive Email Updates',				
+				'password' => 'Password',				
 				'verifyPassword' => 'Verify Password',
-				'termsAgreed' => 'Terms & Conditions',
-				'verifyCode' => 'Captcha',
 				'email' => 'Email',
 		);
 	}

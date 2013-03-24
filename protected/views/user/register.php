@@ -26,47 +26,39 @@ Yii::app()->clientScript->registerScript('helloscript',"
 			'enableAjaxValidation'=>false,
 )); ?>
 
-	<table>
-		<tr>
-			<td><?php echo $form->label($model,'username'); ?><br /> <?php echo $form->textField($model,'username'); ?><br />
+	<table class="registerTable">
+		<tr class="managedRow">
+			<td><?php echo $form->label($model,'username'); ?><br /> <?php echo $form->textField($model,'username', array('class' => 'border formTextField')); ?><br />
 				<?php echo $form->error($model,'username'); ?>
 			</td>
-			<td><?php echo $form->label($model,'password'); ?><br /> <?php echo $form->passwordField($model,'password'); ?><br />
+			<td>
+			<?php echo $form->label($model,'email'); ?><br /> <?php echo $form->textField($model,'email', array('class' => 'border formTextField')); ?><br />
+				<?php echo $form->error($model,'email'); ?>
+			
+			</td>
+			
+		</tr>
+
+		<tr class="managedRow">
+			<td>
+			<?php echo $form->label($model,'password'); ?><br /> <?php echo $form->passwordField($model,'password', array('class' => 'border formTextField')); ?><br />
 				<?php echo $form->error($model,'password'); ?>
 			</td>
-		</tr>
-
-		<tr>
-			<td><?php echo $form->label($model,'verifyPassword'); ?><br /> <?php echo $form->passwordField($model,'verifyPassword'); ?><br />
+			<td>
+			<?php echo $form->label($model,'verifyPassword'); ?><br /> <?php echo $form->passwordField($model,'verifyPassword', array('class' => 'border formTextField')); ?><br />
 				<?php echo $form->error($model,'verifyPassword'); ?>
-			</td>
-			<td><?php echo $form->label($model,'email'); ?><br /> <?php echo $form->textField($model,'email'); ?><br />
-				<?php echo $form->error($model,'email'); ?>
+			
 			</td>
 		</tr>
 
-		<tr>
-			<td><?php echo $form->label($model,'emailNewsLetter'); ?><br /> <?php echo $form->checkBox($model, 'emailNewsLetter');?><br />
-				<?php echo $form->error($model,'emailNewsLetter'); ?>
-			</td>
-			<td><?php echo $form->label($model,'emailUpdates'); ?><br /> <?php echo $form->checkBox($model, 'emailUpdates');?><br />
-				<?php echo $form->error($model,'emailUpdates'); ?>
-			</td>
-		</tr>
+		
+
+		
 
 		<tr>
-			<td><?php echo $form->label($model,'verifyCode'); ?><br /> <?php $this->widget('CCaptcha', array('buttonOptions' => array('style' => 'display:block'))); ?>
-				<?php echo CHtml::activeTextField( $model,'verifyCode', array('class'=>'captcha')); ?><br />
-				<?php echo $form->error($model,'verifyCode'); ?>
-			</td>
-			<td><?php echo $form->label($model,'termsAgreed'); ?><br /> <?php echo $form->checkBox($model, 'termsAgreed');?>
-				<?php echo 'I accept the ' . CHtml::link('Terms & Conditions', array('terms'));?>
-				<?php echo $form->error($model,'termsAgreed'); ?>
-			</td>
-		</tr>
-
-		<tr>
-			<td colspan=2><?php echo CHtml::submitButton("Register", array('id' => 'submitButton')); ?>
+			<td colspan=2>
+			<?php echo CHtml::link('Terms & Conditions', array('terms')); ?><br />
+			<?php echo CHtml::submitButton("Agree and sRegister", array('id' => 'submitButton')); ?>
 			</td>
 		</tr>
 	</table>
