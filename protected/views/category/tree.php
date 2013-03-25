@@ -1,13 +1,3 @@
-<!doctype html>
-<html>
-<head>
-<title>ClearMind</title>
-<meta name="description" content="Hierarchical Note Taking" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="css/style.css" type="text/css" rel="stylesheet" />
-
-</head>
-<body>
 <?php 
 Yii::app()->clientScript->registerScript('liveSearch','
 $("#nameField").bind("keyup", function(e) {
@@ -59,17 +49,7 @@ $("#descriptionField").bind("keyup", function(e) {
 
 ?>
 
-<div id="account">
-				<?php if(!Yii::app()->user->isGuest) : ?>
-			
-					
-					Logged In:
-					<?php echo CHtml::link(Yii::app()->user->name, array('profile/index')); ?>
-					<?php echo ' ( ' . CHtml::link('Log Out', array('user/logout')) . ' ) '; ?>		
-				<?php else: ?>	
-				<div style="height: 30px;display:block;width: 600px;"> &nbsp; </div>
-				<?php endif; ?>
-			</div>
+
 
 <?php 
 $this->widget('application.widgets.JsTreeWidget',
@@ -85,5 +65,3 @@ $this->widget('application.widgets.JsTreeWidget',
 <input type="text" name="descriptionField" id="descriptionField" />
 <input type="hidden" name="idField" id="idField" />
 
-</body>
-</html>

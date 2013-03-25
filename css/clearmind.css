@@ -1,0 +1,24 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+.logoDiv {
+	height: 80px;
+	width: 200px;
+	font-size: 30px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 80px;
+	float: left;
+	text-align: left;
+}
+
+.rightHeaderDiv {
+	height: 80px;
+	width: 400px;
+	font-size: 15px;
+	line-height: 80px;
+	text-align: right;
+	float: right;
+}

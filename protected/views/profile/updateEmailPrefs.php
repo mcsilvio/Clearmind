@@ -1,7 +1,7 @@
 
 
 
-<h2>Email Preferences</h2>
+<p>Email Preferences</p>
 
 <p>These are the email preferences for the address: <?php echo $email; ?></p>
 

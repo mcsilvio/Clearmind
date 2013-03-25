@@ -3,10 +3,12 @@
 class ProfileController extends Controller
 {
 
+	public $layout = 'private';
+	
 	public function init()
 	{
 		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/global.css');
-		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/userAndProfile.css');
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/clearmind.css');
 		return parent::init();
 	}
 

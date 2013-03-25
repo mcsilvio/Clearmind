@@ -57,8 +57,9 @@ Yii::app()->clientScript->registerScript('helloscript',"
 
 		<tr>
 			<td colspan=2>
+			
 			<?php echo CHtml::link('Terms & Conditions', array('terms')); ?><br />
-			<?php echo CHtml::submitButton("Agree and sRegister", array('id' => 'submitButton')); ?>
+			<?php echo CHtml::submitButton("Agree and Register", array('id' => 'submitButton')); ?>
 			</td>
 		</tr>
 	</table>

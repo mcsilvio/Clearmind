@@ -21,20 +21,16 @@ h1{
 
 .login{
 	width: 400px;
-	height: 260px;
+	height: 300px;
 	
 }
 
 .register{
 	width: 800px;
-	height: 260px;
+	height: 300px;
 }
 
-.form{
-	font-size: 20px;
-	background-color: rgba(255, 255, 255, 0.4);
-	margin: 0 auto;
-}
+
 
 .label{
 	margin-top: 20px;	
@@ -52,14 +48,7 @@ h1{
 	width: 150px;
 }
 
-.border{
-  resize: none;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  border: none;
-  background: rgba(255, 255, 255, 0.4);
-  overflow: auto;
-}
+
 
 .registerTable{
 	width: 100%;

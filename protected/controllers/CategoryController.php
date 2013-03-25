@@ -7,7 +7,7 @@ class CategoryController extends BaseController
      * using two-column layout. See 'protected/views/layouts/column2.php'.
      */
 
-    public $layout = false;
+    public $layout = 'private';
 
 public function init()
 	{

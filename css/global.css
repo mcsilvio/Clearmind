@@ -18,7 +18,27 @@ html, body {
   
 }
 
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
 a:link {color:#fff;}      /* unvisited link */
 a:visited {color:#fff;}  /* visited link */
 a:hover {color:#fff;}  /* mouse over link */
-a:active {color:#fff;}  /* selected link */ 
+a:active {color:#fff;}  /* selected link */
+
+.form{
+	font-size: 20px;
+	background-color: rgba(255, 255, 255, 0.4);
+	margin: 0 auto;
+}
+
+.border{
+  resize: none;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  overflow: auto;
+}

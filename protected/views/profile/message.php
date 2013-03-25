@@ -1,9 +1,5 @@
 
 
-<?php
-$this->pageTitle=Yii::app()->name . ' - ' . CHtml::encode($title);
-?>
-
 <h1><?php echo CHtml::encode($title);?></h1>
 
 <p>

@@ -2,7 +2,7 @@
 
 
 
-<h1>Update <?php echo $model->username; ?></h1>
+
 
 <?php 
 Yii::app()->clientScript->registerScript('avatarPreview','

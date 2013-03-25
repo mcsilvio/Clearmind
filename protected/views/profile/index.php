@@ -1,6 +1,6 @@
 
 
-<h1><?php echo $model->username; ?>'s Profile</h1>
+
 
 <?php 
 	$imageExists = User::userHasAvatar(Yii::app()->user->id);

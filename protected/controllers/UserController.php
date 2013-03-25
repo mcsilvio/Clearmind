@@ -3,6 +3,8 @@
 class UserController extends Controller
 {
 
+	public $layout = 'public';
+	
 	public function init()
 	{
 		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/global.css');
