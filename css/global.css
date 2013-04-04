@@ -1,44 +1,56 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-html, body {
-  text-align: center;
-  background-color: #ffffff;
-  background-image: -webkit-gradient(linear, left, right, from(#5A9AF7), to(#2F2727));
-  background-image: -webkit-linear-gradient(left, #5A9AF7, #2F2727);
-  background-image:    -moz-linear-gradient(left, #5A9AF7, #2F2727);
-  background-image:      -o-linear-gradient(left, #5A9AF7, #2F2727);
-  background-image:         linear-gradient(to right, #5A9AF7, #2F2727);
-  height: 100%;
-  width: 100%;
-  color: white;
-  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-  
+html,body {
+	text-align: center;
+	background-color: #ffffff;
+	background-image: -webkit-gradient(linear, left, right, from(#5A9AF7),
+		to(#2F2727) );
+	background-image: -webkit-linear-gradient(left, #5A9AF7, #2F2727);
+	background-image: -moz-linear-gradient(left, #5A9AF7, #2F2727);
+	background-image: -o-linear-gradient(left, #5A9AF7, #2F2727);
+	background-image: linear-gradient(to right, #5A9AF7, #2F2727);
+	height: 100%;
+	width: 100%;
+	color: white;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
-.container{
+.container {
 	width: 80%;
 	margin: 0 auto;
 }
 
-a:link {color:#fff;}      /* unvisited link */
-a:visited {color:#fff;}  /* visited link */
-a:hover {color:#fff;}  /* mouse over link */
-a:active {color:#fff;}  /* selected link */
-
-.form{
+a:link {
+	color: #fff;
+} /* unvisited link */
+a:visited {
+	color: #fff;
+} /* visited link */
+a:hover {
+	color: #fff;
+} /* mouse over link */
+a:active {
+	color: #fff;
+} /* selected link */
+.form {
 	font-size: 20px;
 	background-color: rgba(255, 255, 255, 0.4);
 	margin: 0 auto;
 }
 
-.border{
-  resize: none;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  border: none;
-  background: rgba(255, 255, 255, 0.4);
-  overflow: auto;
+.border {
+	resize: none;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	border: none;
+	background: rgba(255, 255, 255, 0.4);
+	overflow: auto;
+}
+
+.fill {
+	height: 100%;
+	width: 100%;
 }

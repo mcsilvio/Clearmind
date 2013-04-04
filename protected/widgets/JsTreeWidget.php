@@ -25,6 +25,7 @@ class JsTreeWidget extends CWidget
     public $jstree_container_ID = 'jstree_container';
 
 
+    public $jstree_classes;
     /**
      * @var string theme configuration
      * @link  http://www.jstree.com/documentation/themes
@@ -76,7 +77,7 @@ class JsTreeWidget extends CWidget
 EOD;
 
         //uncomment to register jquery only if you have not already registered it somewhere else in your application
-        Yii::app()->clientScript->registerCoreScript('jquery');
+        //Yii::app()->clientScript->registerCoreScript('jquery');
 
         //uncomment to register bootstrap css if you have not already included  it (optional),or else you will have to style the html by yourself.
         //Yii::app()->clientScript->registerCssFile($baseUrl . '/js_plugins/bootstrap/css/bootstrap.css');

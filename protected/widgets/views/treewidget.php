@@ -17,6 +17,6 @@
     
     <div class="row">
         <!--The tree will be rendered in this div-->
-        <div class="well" id="<?php echo $this->jstree_container_ID;?>"></div>
+        <div class="well <?php echo $this->jstree_classes;?>" id="<?php echo $this->jstree_container_ID;?>"></div>
     </div>
 </div>

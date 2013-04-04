@@ -1,6 +1,6 @@
 
-
-<h1>Terms and Conditions</h1>
+<div class="form register border">
+<p>Terms and Conditions</p>
 
 <h3>(1) Introduction</h3>
 
@@ -137,3 +137,5 @@ THE Funisher Games website IS PROVIDED TO YOU "AS IS," AND WE MAKE NO EXPRESS OR
       OR LEGAL THEORY UNDER WHICH THE LIABILITY MAY BE ASSERTED, EVEN IF ADVISED OF THE POSSIBILITY
        OR LIKELIHOOD OF SUCH DAMAGES.
        </p>
+       
+ </div>

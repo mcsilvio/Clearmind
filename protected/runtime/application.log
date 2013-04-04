@@ -8609,3 +8609,178 @@ Stack trace:
 REQUEST_URI=/clearmind.com/images/avatars/no-image.png
 HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
 ---
+2013/03/25 21:40:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatars/no-image.png".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('images/avatars/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/images/avatars/no-image.png
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
+---
+2013/03/25 21:42:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatars/no-image.png".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('images/avatars/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/images/avatars/no-image.png
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
+---
+2013/03/25 21:42:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatars/no-image.png".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('images/avatars/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/images/avatars/no-image.png
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
+---
+2013/03/25 21:42:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatars/no-image.png".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('images/avatars/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/images/avatars/no-image.png
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/update
+---
+2013/03/25 21:42:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatars/no-image.png".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('images/avatars/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/images/avatars/no-image.png
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
+---
+2013/03/25 21:42:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatars/no-image.png".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('images/avatars/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/images/avatars/no-image.png
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
+---
+2013/03/25 22:15:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/jquery-1.5.1.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/jque...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/js_plugins/jquery-1.5.1.js
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/03/25 22:15:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/jquery-1.5.1.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/jque...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/js_plugins/jquery-1.5.1.js
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/04/03 03:41:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/jquery-1.5.1.min.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/jque...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/js_plugins/jquery-1.5.1.min.js
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/04/03 03:45:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatars/no-image.png".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('images/avatars/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/images/avatars/no-image.png
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
+---
+2013/04/03 04:06:48 [error] [exception.CException] exception 'CException' with message 'Property "JsTreeWidget.class" is not defined.' in /Applications/MAMP/framework/base/CComponent.php:173
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWidgetFactory.php(161): CComponent->__set('class', Array)
+#1 /Applications/MAMP/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(CategoryController), 'application.wid...', Array)
+#2 /Applications/MAMP/framework/web/CBaseController.php(172): CBaseController->createWidget('application.wid...', Array)
+#3 /Applications/MAMP/htdocs/clearmind.com/protected/views/category/tree.php(89): CBaseController->widget('application.wid...', Array)
+#4 /Applications/MAMP/framework/web/CBaseController.php(126): require('/Applications/M...')
+#5 /Applications/MAMP/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', NULL, true)
+#6 /Applications/MAMP/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', NULL, true)
+#7 /Applications/MAMP/framework/web/CController.php(782): CController->renderPartial('tree', NULL, true)
+#8 /Applications/MAMP/htdocs/clearmind.com/protected/controllers/CategoryController.php(37): CController->render('tree')
+#9 /Applications/MAMP/framework/web/actions/CInlineAction.php(49): CategoryController->actionTree()
+#10 /Applications/MAMP/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('tree')
+#14 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('category/tree')
+#15 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/clearmind.com/category/tree
+HTTP_REFERER=http://localhost:8888/clearmind.com/user/login
+---
+2013/04/03 04:27:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatars/no-image.png".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('images/avatars/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/images/avatars/no-image.png
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
+---
+2013/04/03 04:47:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/jstree/themes/default/style.cs".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/jstr...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/js_plugins/jstree/themes/default/style.cs
+---
+2013/04/03 05:11:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/jstree/themes/clearmind/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/jstr...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/js_plugins/jstree/themes/clearmind/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/04/03 05:22:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/avatars/no-image.png".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('images/avatars/...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/images/avatars/no-image.png
+HTTP_REFERER=http://localhost:8888/clearmind.com/profile/index
+---
+2013/04/03 05:26:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/jquery.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/jque...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/js_plugins/jquery.js
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/04/04 04:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/jstree/themes/default/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/jstr...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/js_plugins/jstree/themes/default/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/04/04 05:38:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/jstree/themes/default/style.css".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/jstr...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/js_plugins/jstree/themes/default/style.css
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
