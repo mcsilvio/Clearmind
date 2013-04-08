@@ -46,7 +46,7 @@ class JsTreeBehavior extends CBehavior
      */
     public function actionGetNode(){
     	$model = $this->loadModel($_POST['id']);
-    	echo json_encode(array('name' => $model->name, 'description' => $model->description, 'id' => $model->id));
+    	echo json_encode(array('title' => $model->title, 'content' => $model->content, 'id' => $model->id));
     }
 
 
@@ -118,8 +118,8 @@ class JsTreeBehavior extends CBehavior
     	echo $this->modelClassName;
         if (isset($_POST[$this->modelClassName])) {
             $model = new $this->modelClassName;
-            $model->name = $_POST['name'];
-            $model->description = '';
+            $model->title = $_POST['name'];
+            $model->content = '';
             $parent = $this->loadModel($_POST['parent_id']);
             if ($model->appendTo($parent)) {
                 echo json_encode(array('success' => true,
@@ -161,7 +161,6 @@ class JsTreeBehavior extends CBehavior
         //Figure out if we are updating a Model or creating a new one.
         if (isset($_POST['update_id'])) $model = $this->loadModel($_POST['update_id']);
         else $model = new $this->modelClassName;
-        echo 'oink';
         $this->owner->renderPartial($this->form_alias_path, array(
                 'model' => $model,
                 'parent_id' => !empty($_POST['parent_id']) ? $_POST['parent_id'] : '',
@@ -179,11 +178,11 @@ class JsTreeBehavior extends CBehavior
         if (isset($_POST[$this->modelClassName])) {
             $model = $this->loadModel($_POST['update_id']);
             
-            if(isset($_POST['nameOnly']))
-            	$model->name = $_POST['name'];
+            if(isset($_POST['titleOnly']))
+            	$model->title = $_POST['title'];
             
-            if(isset($_POST['descriptionOnly']))
-            	$model->description = $_POST['description'];
+            if(isset($_POST['contentOnly']))
+            	$model->content = $_POST['content'];
             
             if ($model->saveNode(false)) {
                 echo json_encode(array('success' => true));

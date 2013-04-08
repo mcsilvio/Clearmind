@@ -1,5 +1,5 @@
 <?php 
-Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js_plugins/jquery-1.5.1.min.js');
+Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js_plugins/jquery-1.9.1.min.js');
 Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js_plugins/jquery.layout.js');
 Yii::app()->clientScript->registerScript('Clearmind','
 
@@ -29,12 +29,12 @@ eastLayout = $("div.ui-layout-center").layout({
 });
 		
 	
-$("#nameField").bind("keyup", function(e) {
+$("#titleField").bind("keyup", function(e) {
 	//on letter number
 	if ((e.which <= 90 && e.which >= 46 ) || e.which == 8 || (e.which >= 186 && e.which <= 222))
 	{
 		//write to tree
-		$("#" + JsTreeBehavior.container_ID).jstree("rename_node", $("#node_" + $("#idField").val()), $("#nameField").val() );
+		$("#" + JsTreeBehavior.container_ID).jstree("rename_node", $("#node_" + $("#idField").val()), $("#titleField").val() );
 
 
 		//save to database, when?
@@ -42,10 +42,10 @@ $("#nameField").bind("keyup", function(e) {
 			type:"POST",
 			url:Yii_js.baseUrl + "/" + JsTreeBehavior.controllerID + "/updateNode",
 			data:{
-				"Category" : "Category",
+				"Node" : "Node",
 				"update_id": $("#idField").val(),
-				"name" : $("#nameField").val(),
-				"nameOnly" : true,
+				"title" : $("#titleField").val(),
+				"titleOnly" : true,
 				"YII_CSRF_TOKEN":Yii_js.csrf
 			},
 			 
@@ -54,7 +54,7 @@ $("#nameField").bind("keyup", function(e) {
 	}
 });
 
-$("#descriptionField").bind("keyup", function(e) {
+$("#contentField").bind("keyup", function(e) {
 	//on letter number
 	if ((e.which <= 90 && e.which >= 46 ) || e.which == 8 || (e.which >= 186 && e.which <= 222))
 	{
@@ -63,10 +63,10 @@ $("#descriptionField").bind("keyup", function(e) {
 			type:"POST",
 			url:Yii_js.baseUrl + "/" + JsTreeBehavior.controllerID + "/updateNode",
 			data:{
-				"Category" : "Category",
+				"Node" : "Node",
 				"update_id": $("#idField").val(),
-				"descriptionOnly" : true,
-				"description" : $("#descriptionField").val(),
+				"contentOnly" : true,
+				"content" : $("#contentField").val(),
 				"YII_CSRF_TOKEN":Yii_js.csrf
 			},
 			 
@@ -82,8 +82,8 @@ $("#descriptionField").bind("keyup", function(e) {
 <DIV class="ui-layout-west border fill">
 <?php
 $this->widget('application.widgets.JsTreeWidget',
-array('modelClassName' => 'Category',
-'jstree_container_ID' => 'Category-wrapper',
+array('modelClassName' => 'Node',
+'jstree_container_ID' => 'Node-wrapper',
 'themes' => array('theme' => 'default', 'dots' => true, 'icons' => false),
 'plugins' => array('themes', 'html_data', 'contextmenu', 'crrm', 'dnd', 'cookies', 'ui'),
 'jstree_classes' => '',
@@ -93,10 +93,10 @@ array('modelClassName' => 'Category',
 <DIV class="ui-layout-center">
 
 	<DIV class="center-north">
-		<input type="text" name="nameField" id="nameField" class="fill border" />
+		<input type="text" name="titleField" id="titleField" class="fill border" />
 	</div>
 	<DIV class="center-center">
-		<textarea name="descriptionField" id="descriptionField" class="fill border"></textarea>
+		<textarea name="contentField" id="contentField" class="fill border"></textarea>
 	</div>
 
 </DIV>

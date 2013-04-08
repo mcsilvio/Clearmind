@@ -124,8 +124,8 @@ $(function () {
                 },
                 success:function (r) {
                     response = $.parseJSON(r);
-                    $("#nameField").val(response.name);
-                    $("#descriptionField").val(response.description);
+                    $("#titleField").val(response.title);
+                    $("#contentField").val(response.content);
                     $("#idField").val(response.id);
                 }
             });
@@ -192,7 +192,7 @@ $(function () {
                 url:Yii_js.baseUrl + "/" + JsTreeBehavior.controllerID + "/createNode",
                 data:{   'name':newname,
                     'parent_id':parent_id,
-                    'Category': 'Category',
+                    'Node': 'Node',
                     "YII_CSRF_TOKEN":Yii_js.csrf
                 },
                 beforeSend:function () {
@@ -321,41 +321,6 @@ $(function () {
     $("#" + JsTreeBehavior.container_ID).delegate("a","contextmenu", function () {
     	$("#" + JsTreeBehavior.container_ID).jstree("select_node", this, true); });
 	
-    	
-    $("#add_root").click(function () {
-        $.ajax({
-            type:'POST',
-            url:Yii_js.baseUrl + "/" + JsTreeBehavior.controllerID + "/returnForm",
-            data:{
-                "create_root": "true",
-                "name": "new root",
-                "parent_id": 777,
-                "YII_CSRF_TOKEN":Yii_js.csrf
-            },
-            beforeSend:function () {
-                spinner.spin(spinnertarget);
-            },
-            complete:function () {
-                spinner.stop();
-            },
-            success:function (data) {
-
-                $.fancybox(data,
-                    {    "transitionIn":"elastic",
-                        "transitionOut":"elastic",
-                        "speedIn":600,
-                        "speedOut":200,
-                        "overlayShow":false,
-                        "hideOnContentClick":false,
-                        "afterClose":function () {
-                            jQuery("#" + JsTreeBehavior.container_ID).jstree("refresh");
-                        } //afterClose
-                    })//fancybox
-
-            } //function
-
-        });//post
-    });//click function
 
     $("#reload").click(function () {
         jQuery("#" + JsTreeBehavior.container_ID).jstree("refresh");
