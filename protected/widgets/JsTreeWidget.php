@@ -81,7 +81,7 @@ EOD;
 
         //uncomment to register bootstrap css if you have not already included  it (optional),or else you will have to style the html by yourself.
         //Yii::app()->clientScript->registerCssFile($baseUrl . '/js_plugins/bootstrap/css/bootstrap.css');
-        Yii::app()->clientScript->registerCoreScript('cookie');
+        //Yii::app()->clientScript->registerCoreScript('cookie');
         Yii::app()->clientScript->registerScript(__CLASS__ . 'jstree_behavior_params', $jstree_behavior_js, CClientScript::POS_END);
 
         //modal dialog with noty.js
@@ -91,8 +91,8 @@ EOD;
         //js spinner
         Yii::app()->clientScript->registerScriptFile($baseUrl . '/js_plugins/spin.min.js', CClientScript::POS_END);
         //fancybox
-       Yii::app()->clientScript->registerScriptFile($baseUrl . '/js_plugins/fancybox2/jquery.fancybox.js', CClientScript::POS_END);
-        Yii::app()->clientScript->registerCssFile($baseUrl . '/js_plugins/fancybox2/jquery.fancybox.css');
+//        Yii::app()->clientScript->registerScriptFile($baseUrl . '/js_plugins/fancybox2/jquery.fancybox.js', CClientScript::POS_END);
+//         Yii::app()->clientScript->registerCssFile($baseUrl . '/js_plugins/fancybox2/jquery.fancybox.css');
 
         Yii::app()->clientScript->registerScriptFile($baseUrl . '/js_plugins/json2/json2.js');
 

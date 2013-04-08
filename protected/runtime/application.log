@@ -8784,3 +8784,57 @@ Stack trace:
 REQUEST_URI=/clearmind.com/js_plugins/jstree/themes/default/style.css
 HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
 ---
+2013/04/05 04:11:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/jquery-1.5.1.min.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/jque...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/js_plugins/jquery-1.5.1.min.js
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/04/06 04:53:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/jquery-1.5.1.min.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/jque...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/js_plugins/jquery-1.5.1.min.js
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/04/07 05:08:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/jquery-1.5.1.min.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/jque...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/js_plugins/jquery-1.5.1.min.js
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/04/07 05:41:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/jquery-1.5.1.min.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/jque...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/js_plugins/jquery-1.5.1.min.js
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/04/07 06:00:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/jquery-1.5.1.min.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/jque...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/js_plugins/jquery-1.5.1.min.js
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
+2013/04/07 19:57:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/jquery-1.5.1.min.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/jque...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmind.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmind.com/js_plugins/jquery-1.5.1.min.js
+HTTP_REFERER=http://localhost:8888/clearmind.com/category/tree
+---
