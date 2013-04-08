@@ -22,7 +22,7 @@ class ClearmindController extends BaseController
 				'jsTreeBehavior' => array('class' => 'application.behaviors.JsTreeBehavior',
 						'modelClassName' => 'Node',
 						'label_property' => 'title',
-						'rel_property' => 'title'
+						'rel_property' => 'title',
 				)
 		);
 	}
@@ -33,5 +33,9 @@ class ClearmindController extends BaseController
 	public function actionIndex()
 	{
 		$this->render('index');
+	}
+	
+	public function actionExport(){
+		echo $_POST['id'];
 	}
 }

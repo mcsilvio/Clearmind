@@ -4,9 +4,55 @@ Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js_plugins/
 Yii::app()->clientScript->registerScript('Clearmind','
 
 		var outerLayout, eastLayout;
+		var autoSaveTimedCommand;
 		
+		function checkValidEditKey(e) 
+		{
+			 return ((e.which <= 90 && e.which >= 46 ) || e.which == 8 || (e.which >= 186 && e.which <= 222));
+		}
 
+		function hasChanged(titleChanged)
+		{
+			$("#saveLink").text("Waiting...");
+			if(autoSaveTimedCommand) clearTimeout(autoSaveTimedCommand);
+			autoSaveTimedCommand = setTimeout(function(){ saveNode($("#idField").val(), titleChanged); }, 3000);
+		}
+		
+		function saveNode(id, titleChanged )
+		{
+			$("#saveLink").text("Saving...");
+			var data = 
+			{
+				"Node" : "Node",
+				"update_id": id,
+				"YII_CSRF_TOKEN":Yii_js.csrf
+			}
+		
+			if(titleChanged)
+			{
+				data.title = $("#titleField").val();
+				data.titleOnly = true;
+			}
+			else
+			{
+				data.content = $("#contentField").val();
+				data.contentOnly = true;
+			}
 
+			$.ajax
+			({
+				type:"POST",
+				url:Yii_js.baseUrl + "/" + JsTreeBehavior.controllerID + "/updateNode",
+				data: data, 
+				success: function(data)
+				{
+					$("#saveLink").text("Saved");
+				}
+			});
+		}
+
+		
+		
 		$(document).ready(function() {
 		 
 		// load jTable
@@ -16,7 +62,7 @@ Yii::app()->clientScript->registerScript('Clearmind','
 		, spacing_open: 20
 		, closable: false,
 		
-});
+		});
 
 eastLayout = $("div.ui-layout-center").layout({
 	minSize:				50	// ALL panes
@@ -31,47 +77,22 @@ eastLayout = $("div.ui-layout-center").layout({
 	
 $("#titleField").bind("keyup", function(e) {
 	//on letter number
-	if ((e.which <= 90 && e.which >= 46 ) || e.which == 8 || (e.which >= 186 && e.which <= 222))
+	if (checkValidEditKey(e))
 	{
-		//write to tree
+		//rename node on tree
 		$("#" + JsTreeBehavior.container_ID).jstree("rename_node", $("#node_" + $("#idField").val()), $("#titleField").val() );
 
-
-		//save to database, when?
-		$.ajax({
-			type:"POST",
-			url:Yii_js.baseUrl + "/" + JsTreeBehavior.controllerID + "/updateNode",
-			data:{
-				"Node" : "Node",
-				"update_id": $("#idField").val(),
-				"title" : $("#titleField").val(),
-				"titleOnly" : true,
-				"YII_CSRF_TOKEN":Yii_js.csrf
-			},
-			 
-			 
-		});
+		//mark content as changed
+		hasChanged(true);
 	}
 });
 
 $("#contentField").bind("keyup", function(e) {
 	//on letter number
-	if ((e.which <= 90 && e.which >= 46 ) || e.which == 8 || (e.which >= 186 && e.which <= 222))
+	if (checkValidEditKey(e))
 	{
-		//save to database, when?
-		$.ajax({
-			type:"POST",
-			url:Yii_js.baseUrl + "/" + JsTreeBehavior.controllerID + "/updateNode",
-			data:{
-				"Node" : "Node",
-				"update_id": $("#idField").val(),
-				"contentOnly" : true,
-				"content" : $("#contentField").val(),
-				"YII_CSRF_TOKEN":Yii_js.csrf
-			},
-			 
-			 
-		});
+		//mark content as changed
+		hasChanged(false);
 	}
 });
 ');
