@@ -190,7 +190,7 @@ $(function () {
             $.ajax({
                 type:"POST",
                 url:Yii_js.baseUrl + "/" + JsTreeBehavior.controllerID + "/createNode",
-                data:{   'name':newname,
+                data:{   'title':newname,
                     'parent_id':parent_id,
                     'Node': 'Node',
                     "YII_CSRF_TOKEN":Yii_js.csrf

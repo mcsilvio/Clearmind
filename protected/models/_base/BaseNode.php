@@ -39,7 +39,7 @@ abstract class BaseNode extends GxActiveRecord {
 
 	public function rules() {
 		return array(
-			array('user_id, lft, rgt, level, title, content', 'required'),
+			array('user_id, lft, rgt, level, title', 'required'),
 			array('user_id, level', 'numerical', 'integerOnly'=>true),
 			array('root, lft, rgt', 'length', 'max'=>10),
 			array('title', 'length', 'max'=>255),

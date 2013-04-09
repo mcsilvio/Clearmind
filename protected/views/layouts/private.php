@@ -16,21 +16,16 @@
 	<div class="container">
 		<div class="logoDiv">ClearMind</div>
 		<div class="rightHeaderDiv">
-			<span id="saveLink">Saved</span> |
-			<?php
-			echo CHtml::ajaxLink('Export',
-					array('clearmind/export'),
-					array(
-							'type' => 'POST',
-							'data' => array('id' => 'js:$("#idField").val()'),
-							'success' => 'js:function(data) { alert(data); }',
-					)
-			);
-			?>
-			|
 			<?php if(Yii::app()->user->id == Yii::app()->params['admin_id'])
 				echo CHtml::link('Admin', array('admin/index')) . ' | '	;
 			?>
+			<span id="saveLink">Saved</span> 
+			|
+			<span id="exportText"></span>
+			<?php
+			echo CHtml::link('Export', '#', array('class'=>'linkClass','onclick'=>'{exportTree();}', 'id' => 'exportLink'));
+			?>
+			|
 			Logged in as
 			<?php echo CHtml::link(Yii::app()->user->name, array('profile/index')); ?>
 			|

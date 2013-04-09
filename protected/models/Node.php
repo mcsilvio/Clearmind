@@ -21,6 +21,17 @@ class Node extends BaseNode
 		);
 	}
 	
+	public function rules() {
+		return array(
+				
+				array('user_id, level', 'numerical', 'integerOnly'=>true),
+				array('root, lft, rgt', 'length', 'max'=>10),
+				array('title', 'length', 'max'=>255),
+				array('root', 'default', 'setOnEmpty' => true, 'value' => null),
+				array('id, user_id, root, lft, rgt, level, title, content', 'safe', 'on'=>'search'),
+		);
+	}
+	
 	public function defaultScope()
 	{
 		return array(

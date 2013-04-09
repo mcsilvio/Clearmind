@@ -115,10 +115,10 @@ class JsTreeBehavior extends CBehavior
      */
     public function actionCreateNode()
     {
-    	echo $this->modelClassName;
+    	
         if (isset($_POST[$this->modelClassName])) {
             $model = new $this->modelClassName;
-            $model->title = $_POST['name'];
+            $model->title = $_POST['title'];
             $model->content = '';
             $parent = $this->loadModel($_POST['parent_id']);
             if ($model->appendTo($parent)) {

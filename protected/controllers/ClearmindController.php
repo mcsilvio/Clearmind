@@ -35,7 +35,71 @@ class ClearmindController extends BaseController
 		$this->render('index');
 	}
 	
-	public function actionExport(){
-		echo $_POST['id'];
+	public function actionExportTree(){
+		
+		//id of node to export
+		$id = $_POST['id'];
+		
+		//variables
+		$exportText = "";
+		$section = "";
+		$root = Node::model()->findByPk($id);
+		
+		//traverse tree, creating text
+		$exportText .= $root->title . "\r\n\r\n";
+		$exportText .= trim($root->content) . "\r\n\r\n";
+		
+		$this->traverseChildrenAndWrite($root, $exportText, $section);
+
+		//save file
+		$path = realpath(Yii::app()->basePath . '/../tmp');
+		$tmpfname = tempnam($path, "export_");
+		file_put_contents($tmpfname, $exportText);
+		
+		//return path
+		echo $tmpfname;
+		
+		
+		
 	}
+	
+	public function actionSetVar()
+	{
+		session_start();
+		$_SESSION['file'] = $_POST['var'];
+	}
+	
+	public function actionDownloadFile()
+	{
+		
+		session_start();
+		error_log($_SESSION['file']);
+		
+		$tmpfname = $_SESSION['file'];
+		$exportText = file_get_contents($tmpfname);
+		$title = strtok($exportText, "\r\n");
+	
+		unlink($tmpfname);
+		
+		return Yii::app()->getRequest()->sendFile(basename($title . '.txt'), $exportText);
+	}
+	
+	public function traverseChildrenAndWrite(&$node, &$exportText, $section)
+	{
+		$subsection = 0;
+		$sectionstring = ($section != "") ? $section . "." : "";
+		
+		foreach($node->children()->findAll() as $child)
+		{
+						
+			$exportText .= $sectionstring . ++$subsection . " " . trim($child->title) . "\r\n\r\n";
+			$exportText .= trim($child->content) . "\r\n\r\n";
+			
+			
+			$this->traverseChildrenAndWrite($child, $exportText, ($sectionstring . $subsection));
+		}
+	}
+		
+		
+	
 }

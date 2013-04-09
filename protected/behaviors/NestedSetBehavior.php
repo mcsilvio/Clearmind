@@ -600,38 +600,38 @@ class NestedSetBehavior extends CActiveRecordBehavior
 		if(!$owner->getIsNewRecord()){
 			throw new CDbException(Yii::t('yiiext','The node cannot be inserted because it is not new.'));
 		}
-
+		
 		if($this->getIsDeletedRecord()){
 			throw new CDbException(Yii::t('yiiext','The node cannot be inserted because it is deleted.'));
 		}
-
+		
 		if($target->getIsDeletedRecord()){
 			throw new CDbException(Yii::t('yiiext','The node cannot be inserted because target node is deleted.'));
 		}
-
+		
 		if($owner->equals($target)){
 			throw new CException(Yii::t('yiiext','The target node should not be self.'));
 		}
-
+		
 		if(!$levelUp && $target->isRoot()){
 			throw new CException(Yii::t('yiiext','The target node should not be root.'));
 		}
-
+		
 		if($runValidation && !$owner->validate()){
 			return false;
 		}
-
+		
 		if($this->hasManyRoots){
 			$owner->{$this->rootAttribute}=$target->{$this->rootAttribute};
 		}
-
+		
 		$db=$owner->getDbConnection();
 		$extTransFlag=$db->getCurrentTransaction();
-
+		
 		if($extTransFlag===null){
 			$transaction=$db->beginTransaction();
 		}
-
+		
 		try
 		{
 			$this->shiftLeftRight($key,2);
