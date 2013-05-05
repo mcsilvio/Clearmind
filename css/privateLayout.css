@@ -1,0 +1,33 @@
+
+#cmHeader{
+height: 13%;
+display: table;
+width: 100%;
+}
+
+.logoDiv {
+	height: 100%;
+	width: 200px;
+	//float: left;
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.logoDiv a{
+	font-size: 30px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-decoration: none;
+}
+
+.logoDiv a:hover{
+	text-decoration: underline;
+}
+
+.rightHeaderDiv {
+	height: 100%;
+	font-size: 15px;
+	vertical-align: middle;
+	display: table-cell;
+	text-align: right;
+}

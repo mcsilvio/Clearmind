@@ -1,6 +1,7 @@
 .header{
 	height: 30%;
-	
+	display: table;
+	width: 100%;
 }
 
 .middle{
@@ -12,9 +13,11 @@
 }
 
 h1{
-
+	font-weight: normal;
 	font-size: 90px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 
@@ -58,3 +61,4 @@ h1{
 .managedRow{
 	height:100px;
 }
+

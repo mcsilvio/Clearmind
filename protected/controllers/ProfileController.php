@@ -8,7 +8,8 @@ class ProfileController extends Controller
 	public function init()
 	{
 		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/global.css');
-		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/clearmind.css');
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/privateLayout.css');
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/profile.css');
 		return parent::init();
 	}
 

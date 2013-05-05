@@ -12,8 +12,26 @@ class ClearmindController extends BaseController
 	public function init()
 	{
 		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/global.css');
+		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/privateLayout.css');
 		Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/clearmind.css');
 		return parent::init();
+	}
+	
+	public function filters()
+	{
+		return array( 'accessControl' ); // perform access control for CRUD operations
+	}
+	
+	public function accessRules()
+	{
+		return array(
+				array('allow', // allow authenticated users to access all actions
+						'users'=>array('@'),
+				),
+	
+				
+				array('deny'),
+		);
 	}
 
 	public function behaviors()

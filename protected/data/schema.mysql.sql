@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 21, 2013 at 03:05 AM
+-- Generation Time: Apr 09, 2013 at 07:38 PM
 -- Server version: 5.5.25
 -- PHP Version: 5.4.4
 
@@ -17,43 +17,41 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `category`
+-- Table structure for table `node`
 --
 
-CREATE TABLE `category` (
+CREATE TABLE `node` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `root` int(10) unsigned DEFAULT NULL,
   `lft` int(10) unsigned NOT NULL,
   `rgt` int(10) unsigned NOT NULL,
   `level` smallint(5) unsigned NOT NULL,
-  `name` varchar(128) CHARACTER SET utf8 NOT NULL,
-  `description` text CHARACTER SET utf8 NOT NULL,
+  `title` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `content` text CHARACTER SET utf8 NOT NULL,
   PRIMARY KEY (`id`),
   KEY `lft` (`lft`),
   KEY `rgt` (`rgt`),
   KEY `level` (`level`),
   KEY `root` (`root`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=295 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=301 ;
 
 --
--- Dumping data for table `category`
+-- Dumping data for table `node`
 --
 
-INSERT INTO `category` (`id`, `user_id`, `root`, `lft`, `rgt`, `level`, `name`, `description`) VALUES
-(1, 167, 1, 1, 18, 1, 'Joe Schmoe', 'That''s me'),
-(2, 167, 1, 2, 13, 2, 'Personal', 'My personal stuff'),
-(280, 167, 1, 3, 12, 3, 'Doctor', 'Ouch my ass'),
-(283, 168, 1, 1, 18, 1, 'Joe Schmoe', 'That''s mexxxxxxx'),
-(284, 168, 1, 2, 13, 2, 'Personal', 'My personal stuff'),
-(285, 168, 1, 3, 12, 3, 'Doctor', 'Ouch Your Ass'),
-(289, 167, 1, 4, 7, 4, 'Pleasure', 'My personal stuff'),
-(290, 167, 1, 5, 6, 5, 'Doctor', 'Ouch my ass'),
-(291, 168, 1, 14, 17, 2, 'School', ''),
-(292, 168, 1, 15, 16, 3, 'Sucks', 'Its true2'),
-(293, 168, 1, 8, 11, 4, 'School', ''),
-(294, 168, 1, 9, 10, 5, 'Sucks', 'Its true3');
+INSERT INTO `node` (`id`, `user_id`, `root`, `lft`, `rgt`, `level`, `title`, `content`) VALUES
+(1, 167, 1, 1, 16, 1, 'Joe Schmoe', 'That''s me'),
+(2, 167, 1, 2, 7, 2, 'Personal', 'My personal stuff'),
+(283, 168, 1, 1, 16, 1, 'McSilviorr', 'That''s mexdddhhdjhkfjfhkasdf\n\nwas this the one, i cant believe this is working. oh yeah i know its working.'),
+(284, 168, 1, 2, 7, 2, 'Personal', 'My personal stuffuytuyt'),
+(295, 168, 1, 8, 13, 2, 'New node', 'kjhkjhkjhk'),
+(296, 168, 1, 14, 15, 2, 'hkjhkjhlkjlkj', 'utyui'),
+(297, 168, 1, 3, 6, 3, 'asdasdd', ''),
+(298, 168, 1, 4, 5, 4, 'asd', ''),
+(299, 168, 1, 9, 10, 3, 'oink', ''),
+(300, 168, 1, 11, 12, 3, 'oink', '');
 
 -- --------------------------------------------------------
 
@@ -108,8 +106,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `email`, `activationcode`, `activated`, `registration_date`, `last_login_date`, `last_login_ip`) VALUES
-(167, 'mcsilvio', '$2a$08$476e2fbf45ac927435ac8uzJB3Kk0FqgGXohGTW43bcURk4i3Y1V.', 'mcsilvio@gmail.com', '$2a$08$95ff0bb0bd42988e9eb25uuV2zldKuiGyVrwKRthFTdQ4zKGXkC0i', 1, '2013-03-10 00:41:36', '2013-03-13 23:14:59', 'asdsa'),
-(168, 'mcsilvior', '$2a$08$c0a7abeb97aba6104d208OGEKN9rqluyXuEqy.WforE6ZIM7Y3uyy', 'asd@asd.asd', '$2a$08$77328bda04a16126440ecOxHh5GpN1N.0azPLtdaBV73eLnp9GC/W', 1, '2013-03-13 22:26:14', '2013-03-20 22:05:04', 'asdsa');
+(167, 'mcsilvio', '$2a$08$476e2fbf45ac927435ac8uzJB3Kk0FqgGXohGTW43bcURk4i3Y1V.', 'mcsilvio@gmail.com', '$2a$08$95ff0bb0bd42988e9eb25uuV2zldKuiGyVrwKRthFTdQ4zKGXkC0i', 1, '2013-03-10 00:41:36', '2013-04-09 11:28:38', 'asdsa'),
+(168, 'mcsilvior', '$2a$08$c0a7abeb97aba6104d208OGEKN9rqluyXuEqy.WforE6ZIM7Y3uyy', 'asd@asd.asd', '$2a$08$77328bda04a16126440ecOxHh5GpN1N.0azPLtdaBV73eLnp9GC/W', 1, '2013-03-13 22:26:14', '2013-04-09 11:28:49', 'asdsa');
 
 --
 -- Constraints for dumped tables
@@ -120,4 +118,3 @@ INSERT INTO `user` (`id`, `username`, `password`, `email`, `activationcode`, `ac
 --
 ALTER TABLE `profile`
   ADD CONSTRAINT `profile_ibfk_9` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-

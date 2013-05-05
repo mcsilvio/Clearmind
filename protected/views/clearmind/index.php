@@ -43,6 +43,7 @@ Yii::app()->clientScript->registerScript('Export Tree','
 
 Yii::app()->clientScript->registerScript('Clearmind','
 
+		var saveTimeout = 2000;
 		var outerLayout, eastLayout;
 		var autoSaveTimedCommand;
 
@@ -55,7 +56,7 @@ Yii::app()->clientScript->registerScript('Clearmind','
 		{
 		$("#saveLink").text("Waiting...");
 		if(autoSaveTimedCommand) clearTimeout(autoSaveTimedCommand);
-		autoSaveTimedCommand = setTimeout(function(){ saveNode($("#idField").val(), titleChanged); }, 3000);
+		autoSaveTimedCommand = setTimeout(function(){ saveNode($("#idField").val(), titleChanged); }, saveTimeout);
 }
 
 		function saveNode(id, titleChanged )
@@ -96,7 +97,7 @@ Yii::app()->clientScript->registerScript('Clearmind','
 		$(document).ready(function() {
 			
 		// load jTable
-		outerLayout = $("#appContainer").layout({
+		outerLayout = $("#middle").layout({
 		minSize:			100	// ALL panes
 		,	west__size:			250
 		, spacing_open: 20
@@ -144,7 +145,7 @@ Yii::app()->clientScript->registerScript('Clearmind','
 		');
 
 ?>
-<div id="appContainer">
+
 
 	<DIV class="ui-layout-west border fill">
 		<?php
@@ -161,15 +162,15 @@ Yii::app()->clientScript->registerScript('Clearmind','
 
 		<DIV class="center-north">
 			<input type="text" name="titleField" id="titleField"
-				class="fill border" />
+				class="fill border fix" />
 		</div>
 		<DIV class="center-center">
-			<textarea name="contentField" id="contentField" class="fill border"></textarea>
+			<textarea name="contentField" id="contentField" class="fill border fix"></textarea>
 		</div>
 
 	</DIV>
 
-</div>
+
 <input type="hidden" name="idField"
 	id="idField" />
 
