@@ -6,27 +6,23 @@
 	));?>
 
 
-	
-		<p class="label">Username</p>
-		
+	<div class="firstField">
+		<p>Username</p>
 		<?php echo $form->textField($model,'username', array('class' => 'border formTextField')); ?>
-		<br />
-		<?php echo $form->error($model,'username'); ?>
-	
+	</div>
+		<?php echo $form->error($model,'username', array('class' => 'formError')); ?>
 
 	
-		<p class="label">Password</p>
-		
+	<div class="field">
+		<p>Password</p>
 		<?php echo $form->passwordField($model,'password', array('class' => 'border formTextField')); ?>
-		<br />
-		<?php echo $form->error($model,'password'); ?>
+	</div>
+		<?php echo $form->error($model,'password', array('class' => 'formError')); ?>
 	
-
-	<div class="row">
+	<div class="field">
 		<?php echo CHtml::link('Forgot Password?', array('/user/forgotPassword'));?>
 	</div>
-
-	<div class="row submit">
+	<div>
 		<?php echo CHtml::submitButton('Login', array('class' => 'submitButton')); ?>
 	</div>
 

@@ -21,7 +21,7 @@
 	</div>
 
 	<div class="footer">
-		Copyright @2011 ClearmindApp |
+		Copyright @2011 Silvio M. Costantini |
 		<?php echo CHtml::link('Register', array('user/register'));?> |
 		<?php echo CHtml::link('Login', array('user/login'));?>	|
 		<?php echo CHtml::link('Help', array('user/help'));?>

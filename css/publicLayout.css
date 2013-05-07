@@ -24,19 +24,32 @@ h1{
 
 .login{
 	width: 400px;
-	height: 300px;
+	height: 310px;
 	
 }
 
 .register{
 	width: 800px;
-	height: 300px;
+	height: 310px;
+	overflow: hidden;
+}
+
+.formError{
+	float: left; 
+	width: 400px; 
+	text-align: center; 
+	overflow: hidden;
+	color: pink;
 }
 
 
 
-.label{
-	margin-top: 20px;	
+.field{
+	margin-top: 35px;	
+}
+
+.firstField{
+	margin-top: 15px;	
 }
 
 .formTextField{
@@ -47,8 +60,10 @@ h1{
 }
 
 .submitButton{
-	height: 40px;
+	-webkit-appearance: none;
+	height: 35px;
 	width: 150px;
+	margin-top: 5px;
 }
 
 

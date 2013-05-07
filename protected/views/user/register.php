@@ -8,7 +8,7 @@ Yii::app()->clientScript->registerScript('helloscript',"
 		$('#submitButton').attr('disabled', 'true');
 		$('#submitButton').val('Please Wait...');
 		$('#submitButton').attr('readonly', 'true');
-		 
+			
 		return false;
 });
 		",CClientScript::POS_READY);
@@ -26,55 +26,51 @@ Yii::app()->clientScript->registerScript('helloscript',"
 			'enableAjaxValidation'=>false,
 )); ?>
 
-	<table class="registerTable">
-		<tr class="managedRow">
-			<td><?php echo $form->label($model,'username'); ?><br /> <?php echo $form->textField($model,'username', array('class' => 'border formTextField')); ?><br />
-				<?php echo $form->error($model,'username'); ?>
-			</td>
-			<td>
-			<?php echo $form->label($model,'email'); ?><br /> <?php echo $form->textField($model,'email', array('class' => 'border formTextField')); ?><br />
-				<?php echo $form->error($model,'email'); ?>
-			
-			</td>
-			
-		</tr>
-
-		<tr class="managedRow">
-			<td>
-			<?php echo $form->label($model,'password'); ?><br /> <?php echo $form->passwordField($model,'password', array('class' => 'border formTextField')); ?><br />
-				<?php echo $form->error($model,'password'); ?>
-			</td>
-			<td>
-			<?php echo $form->label($model,'verifyPassword'); ?><br /> <?php echo $form->passwordField($model,'verifyPassword', array('class' => 'border formTextField')); ?><br />
-				<?php echo $form->error($model,'verifyPassword'); ?>
-			
-			</td>
-		</tr>
-
-		
-
-		
-
-		<tr>
-			<td colspan=2>
-			
-			<?php echo CHtml::link('Terms & Conditions', array('terms')); ?><br />
-			<?php echo CHtml::submitButton("Agree and Register", array('id' => 'submitButton')); ?>
-			</td>
-		</tr>
-	</table>
+	<div class="regColumn">
+		<div class="firstField">
+			<p>
+				<?php echo $form->label($model,'username'); ?>
+			</p>
+			<?php echo $form->textField($model,'username', array('class' => 'border formTextField')); ?>
+		</div>
+		<?php echo $form->error($model,'username', array('class' => 'formError')); ?>
 
 
+		<div class="field">
+			<p>
+				<?php echo $form->label($model,'password'); ?>
+			</p>
+			<?php echo $form->passwordField($model,'password', array('class' => 'border formTextField')); ?>
+		</div>
+		<?php echo $form->error($model,'password', array('class' => 'formError')); ?>
+	</div>
+
+	<div class="regColumn">
+		<div class="firstField">
+			<p>
+				<?php echo $form->label($model,'email'); ?>
+			</p>
+			<?php echo $form->textField($model,'email', array('class' => 'border formTextField')); ?>
+		</div>
+		<?php echo $form->error($model,'email', array('class' => 'formError')); ?>
 
 
+		<div class="field">
+			<p>
+				<?php echo $form->label($model,'verifyPassword'); ?>
+			</p>
+			<?php echo $form->passwordField($model,'verifyPassword', array('class' => 'border formTextField')); ?>
+		</div>
+		<?php echo $form->error($model,'verifyPassword', array('class' => 'formError')); ?>
 
 
-
-
-
-
-
-
+	</div>
+	<div style="clear: both;"></div>
+	<div class="field">
+		<?php echo CHtml::link('Terms & Conditions', array('terms')); ?>
+		<br />
+		<?php echo CHtml::submitButton("Agree and Register", array('id' => 'submitButton', 'class' => 'submitButton')); ?>
+	</div>
 
 	<?php $this->endWidget(); ?>
 </div>
