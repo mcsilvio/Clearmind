@@ -10048,3 +10048,183 @@ REQUEST_URI=/clearmind.com/clearmind/createNode
 in /Applications/MAMP/htdocs/clearmind.com/protected/behaviors/NestedSetBehavior.php (621)
 in /Applications/MAMP/htdocs/clearmind.com/protected/behaviors/NestedSetBehavior.php (324)
 in /Applications/MAMP/htdocs/clearmind.com/protected/behaviors/JsTreeBehavior.php (124)
+2013/05/17 03:23:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/jquery.noty.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/jquery.noty.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:23:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/themes/default.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/themes/default.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:23:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/layouts/center.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/layouts/center.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:23:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/layouts/center.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/layouts/center.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:23:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/themes/default.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/themes/default.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/jquery.noty.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/jquery.noty.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/themes/default.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/themes/default.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/layouts/center.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/layouts/center.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/layouts/center.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/layouts/center.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/themes/default.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/themes/default.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/themes/default.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/themes/default.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/layouts/center.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/layouts/center.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/jquery.noty.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/jquery.noty.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/layouts/center.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/layouts/center.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/themes/default.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/themes/default.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/themes/default.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/themes/default.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/jquery.noty.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/jquery.noty.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/layouts/center.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/layouts/center.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/layouts/center.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/layouts/center.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/05/17 03:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js_plugins/noty/js/noty/themes/default.js".' in /Applications/MAMP/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('js_plugins/noty...')
+#1 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/themes/default.js
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---

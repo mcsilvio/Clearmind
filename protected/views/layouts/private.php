@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 <head>
@@ -18,13 +17,16 @@
 				<?php if(Yii::app()->user->id == Yii::app()->params['admin_id'])
 					echo CHtml::link('Admin', array('admin/index')) . ' | '	;
 				?>
+				<?php if($this->id == 'clearmind'): ?>
 				<span id="saveLink">Saved</span> 
 				|
 				<span id="exportText"></span>
+				
 				<?php
 				echo CHtml::link('Export', '#', array('class'=>'linkClass','onclick'=>'{exportTree();}', 'id' => 'exportLink'));
 				?>
 				|
+				<?php endif; ?>
 				Logged in as
 				<?php echo CHtml::link(Yii::app()->user->name, array('profile/index')); ?>
 				|

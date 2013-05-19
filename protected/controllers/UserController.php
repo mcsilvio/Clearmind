@@ -138,9 +138,6 @@ class UserController extends Controller
 										
 					$profile = new Profile;
 					$profile->user_id = $user->id;
-					$profile->emailNewsLetter = $model->emailNewsLetter;
-					$profile->emailUpdates = $model->emailUpdates;	
-					$profile->last_emailed = new CDbExpression('FROM_UNIXTIME(' . time() . ')');
 					$profile->save();
 					
 					if(!$this->sendRegistrationEmail($user))

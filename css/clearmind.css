@@ -1,5 +1,4 @@
 
-
 #middle{
 	position: absolute;
     height: 80%;
@@ -15,6 +14,7 @@
 .jstree-default .jstree-rename-input { 
 	margin-left: -20px; 
 	font-size: 16px;
+	height: 25px !important;
 } 
 
 #titleField{
