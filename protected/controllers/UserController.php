@@ -140,6 +140,8 @@ class UserController extends Controller
 					$profile->user_id = $user->id;
 					$profile->save();
 					
+					Node::CreateDefaultTree($user->id);
+					
 					if(!$this->sendRegistrationEmail($user))
 						$this->render('message', array('title' => 'Registration Error', 'message' => 'There was a problem during registration.'));
 					else
@@ -160,6 +162,7 @@ class UserController extends Controller
 		// display the login form
 		$this->render('register',array('model'=>$model));
 	}
+	
 	
 	
 
@@ -207,7 +210,7 @@ class UserController extends Controller
 
 				<p>Please change your password to something private as soon as possible.</p>
 				
-				<p>Thank you very much for your cooperation. If you have any questions or concerns. Please email support@funisher.com</p>
+				<p>Thank you very much for your cooperation. If you have any questions or concerns. Please email info@clearmindapp.com</p>
 				';
 		$subject = 'Password Reset';
 		$encryptedId = $user->activationcode;
@@ -231,7 +234,7 @@ class UserController extends Controller
 				
 				<p><a href="' . $linkstring . '">Activate Account</a></p>
 				
-				<p>Thank you very much for your cooperation. If you have any questions or concerns. Please email info@funisher.com</p>
+				<p>Thank you very much for your cooperation. If you have any questions or concerns. Please email info@clearmindapp.com</p>
 				';
 		$subject = 'Account Activation';
 		$encryptedId = null;

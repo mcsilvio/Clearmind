@@ -63,20 +63,16 @@ class Util {
 		$header = '
 			<div id="container" style="width: 750px; margin: 0 auto; border: 2px solid gray; padding: 25px;">
 				<div id="header">
-					<a href="http://www.funisher.com"><img src="http://www.funisher.com/images/funisherlogo.png" border="0" style="border: none;" /></a>
+					<a href="http://www.clearmindapp.com"><img src="http://www.clearmindapp.com/images/emaillogo.png" border="0" style="border: none;" /></a>
 				</div>
 				<div id="message" style="min-height: 200px; padding: 20px;">
 			';
 		$footer = ($encryptedId) ? '
 			</div>
 			<div id="footer" style="font-size: 10px;">
-				Your security is important to us. For details, see our <a href="http://www.funisher.com/user/privacy">Privacy Policy</a>.
-				You are receiving this email at mcsilvio@gmail.com because you are a member of Funisher Games. 
-				If you would like to update your email preferences or no longer wish to receive our promotional emails, 
-				please <a href="http://www.funisher.com/profile/emailPreferences/?cd=' . $encryptedId . '">click here</a>. 
-				Please allow up to 7 business days for your request to be processed.
-				Please do not reply to this email. Questions or comments may be sent to info@funisher.com.
-				Funisher Games
+				Your privacy is important to us. For details, see our <a href="http://www.clearmindapp.com/user/privacy">Privacy Policy</a>.
+				Please do not reply to this email. Questions or comments may be sent to info@clearmindapp.com.
+				Clearmind Software
 				Toronto, Ontario, Canada
 			</div>
 			</div>

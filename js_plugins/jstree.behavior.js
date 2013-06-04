@@ -67,28 +67,11 @@ $(function () {
                 "remove":{
                     "label":"Delete",
                     "action":function (obj) {
-                        var msg= (obj).attr('rel') +" ("+(obj).attr('id')  +") "+ "and all it's children,if any,will be deleted!Are you sure?"
-                        var n = noty({
-                          		text:  msg,
-                          		type: 'warning',
-                              dismissQueue: true,
-                            modal: true,
-                          		layout: 'center',
-                          		theme: 'defaultTheme',
-                              buttons: [
-                                {addClass: 'btn btn-primary', text: 'Yes,Delete!', onClick: function($noty) {
-                                    jQuery("#" + JsTreeBehavior.container_ID).jstree("remove", obj);
-                                    $noty.close();
-                                    noty({dismissQueue: true, force: true, layout: 'center', theme: 'defaultTheme', text: 'You just deleted '+(obj).attr('rel'), type: 'success'});
-                                  }
-                                },
-                                {addClass: 'btn btn-danger', text: 'Cancel', onClick: function($noty) {
-                                    $noty.close();
-                                   // noty({dismissQueue: true, force: true, layout: layout, theme: 'defaultTheme', text: 'You clicked "Cancel" button', type: 'error'});
-                                  }
-                                }
-                              ]
-                          	});
+                        var answer = confirm("Delete this node and all its children?")
+			if (answer){
+				jQuery("#" + JsTreeBehavior.container_ID).jstree("remove", obj);
+			}
+			
                     }
                 }, //remove
                 "create":{

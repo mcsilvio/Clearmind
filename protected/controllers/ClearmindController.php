@@ -118,6 +118,5 @@ class ClearmindController extends BaseController
 		}
 	}
 		
-		
 	
 }

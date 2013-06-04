@@ -10228,3 +10228,35 @@ Stack trace:
 REQUEST_URI=/clearmindapp.com/js_plugins/noty/js/noty/themes/default.js
 HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
 ---
+2013/06/04 02:49:22 [error] [exception.CException] exception 'CException' with message 'The target node should not be self.' in /Applications/MAMP/htdocs/clearmindapp.com/protected/behaviors/NestedSetBehavior.php:613
+Stack trace:
+#0 /Applications/MAMP/htdocs/clearmindapp.com/protected/behaviors/NestedSetBehavior.php(324): NestedSetBehavior->addNode(Object(Node), NULL, 1, true, NULL)
+#1 [internal function]: NestedSetBehavior->appendTo(Object(Node))
+#2 /Applications/MAMP/framework/base/CComponent.php(260): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/framework/db/ar/CActiveRecord.php(225): CComponent->__call('appendTo', Array)
+#4 /Applications/MAMP/htdocs/clearmindapp.com/protected/controllers/UserController.php(181): CActiveRecord->__call('appendTo', Array)
+#5 /Applications/MAMP/htdocs/clearmindapp.com/protected/controllers/UserController.php(181): Node->appendTo(Object(Node))
+#6 /Applications/MAMP/htdocs/clearmindapp.com/protected/controllers/UserController.php(143): UserController->GetDefaultTree()
+#7 /Applications/MAMP/framework/web/actions/CInlineAction.php(49): UserController->actionRegister()
+#8 /Applications/MAMP/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Applications/MAMP/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Applications/MAMP/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('register')
+#12 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('user/register')
+#13 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/clearmindapp.com/user/register
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/user/register
+---
+2013/06/04 04:23:47 [error] [php] Non-static method Node::CreateDefaultTree() should not be called statically, assuming $this from incompatible context (/Applications/MAMP/htdocs/clearmindapp.com/protected/controllers/UserController.php:143)
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(286): UserController->runAction()
+#1 /Applications/MAMP/framework/web/CController.php(265): UserController->runActionWithFilters()
+#2 /Applications/MAMP/framework/web/CWebApplication.php(282): UserController->run()
+#3 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CWebApplication->run()
+REQUEST_URI=/clearmindapp.com/user/register
+in /Applications/MAMP/htdocs/clearmindapp.com/protected/controllers/UserController.php (143)
+in /Applications/MAMP/htdocs/clearmindapp.com/index.php (13)

@@ -49,5 +49,10 @@ class Node extends BaseNode
 		return false;
 	}
 	
+	public static function CreateDefaultTree($for_user_id)
+	{
+		Yii::app()->db->createCommand('INSERT INTO node (SELECT NULL, ' . $for_user_id . ' as user_id, root, lft, rgt, level, title, content FROM node WHERE user_id = -1)')->query();
+	}
+	
 	
 }
