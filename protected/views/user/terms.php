@@ -1,6 +1,6 @@
 
-<div class="form register border">
-<p>Terms and Conditions</p>
+<div class="form register border scrollable terms">
+<h3>Terms and Conditions</h3>
 
 <h3>(1) Introduction</h3>
 
@@ -121,14 +121,14 @@ Premium SEQ Legal precedents include <a href="http://www.publishing-contracts.co
 
 <h3>(17) Our details</b></h3>
 
-<p>The full name of our company is <i>FUNISHER GAMES</i>. </p>
+<p>The full name of our company is <i>CLEARMIND</i>. </p>
 
-<p>You can contact us by email to <i>info@funisher.com</i>.</p>
+<p>You can contact us by email to <i>info@clearmindapp.com</i>.</p>
 
 <h3>(18) More</h3>
 
 <p>
-THE Funisher Games website IS PROVIDED TO YOU "AS IS," AND WE MAKE NO EXPRESS OR IMPLIED WARRANTIES
+THE ClearmindApp website IS PROVIDED TO YOU "AS IS," AND WE MAKE NO EXPRESS OR IMPLIED WARRANTIES
  WHATSOEVER WITH RESPECT TO ITS FUNCTIONALITY, OPERABILITY, OR USE, INCLUDING, WITHOUT LIMITATION,
   ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR INFRINGEMENT.
    WE EXPRESSLY DISCLAIM ANY LIABILITY WHATSOEVER FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL,

@@ -1,4 +1,5 @@
 
+<div class="message form register border scrollable">
 
 
 
@@ -7,3 +8,5 @@
 <p>
 <?php echo CHtml::encode($message); ?>
 </p>
+
+</div>

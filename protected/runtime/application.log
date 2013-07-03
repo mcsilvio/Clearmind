@@ -10260,3 +10260,209 @@ Stack trace:
 REQUEST_URI=/clearmindapp.com/user/register
 in /Applications/MAMP/htdocs/clearmindapp.com/protected/controllers/UserController.php (143)
 in /Applications/MAMP/htdocs/clearmindapp.com/index.php (13)
+2013/06/17 04:52:51 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/clearmindapp.com/protected/views/profile/index.php:9)
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(869): ProfileController->renderFile()
+#1 /Applications/MAMP/framework/web/CController.php(782): ProfileController->renderPartial()
+#2 /Applications/MAMP/htdocs/clearmindapp.com/protected/controllers/ProfileController.php(43): ProfileController->render()
+#3 /Applications/MAMP/framework/web/actions/CInlineAction.php(49): ProfileController->actionIndex()
+#4 /Applications/MAMP/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/framework/web/filters/CFilterChain.php(133): ProfileController->runAction()
+#6 /Applications/MAMP/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/MAMP/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /Applications/MAMP/framework/web/filters/CInlineFilter.php(58): ProfileController->filterAccessControl()
+#9 /Applications/MAMP/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /Applications/MAMP/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/MAMP/framework/web/CController.php(265): ProfileController->runActionWithFilters()
+#12 /Applications/MAMP/framework/web/CWebApplication.php(282): ProfileController->run()
+#13 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CWebApplication->run()
+REQUEST_URI=/clearmindapp.com/profile/index
+in /Applications/MAMP/htdocs/clearmindapp.com/protected/views/profile/index.php (9)
+in /Applications/MAMP/htdocs/clearmindapp.com/protected/controllers/ProfileController.php (43)
+in /Applications/MAMP/htdocs/clearmindapp.com/index.php (13)
+2013/06/17 04:55:18 [error] [exception.CException] exception 'CException' with message 'Property "CDetailView.class" is not defined.' in /Applications/MAMP/framework/base/CComponent.php:173
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWidgetFactory.php(161): CComponent->__set('class', 'oink')
+#1 /Applications/MAMP/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(ProfileController), 'zii.widgets.CDe...', Array)
+#2 /Applications/MAMP/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#3 /Applications/MAMP/htdocs/clearmindapp.com/protected/views/profile/index.php(34): CBaseController->widget('zii.widgets.CDe...', Array)
+#4 /Applications/MAMP/framework/web/CBaseController.php(126): require('/Applications/M...')
+#5 /Applications/MAMP/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#6 /Applications/MAMP/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#7 /Applications/MAMP/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /Applications/MAMP/htdocs/clearmindapp.com/protected/controllers/ProfileController.php(43): CController->render('index', Array)
+#9 /Applications/MAMP/framework/web/actions/CInlineAction.php(49): ProfileController->actionIndex()
+#10 /Applications/MAMP/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Applications/MAMP/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /Applications/MAMP/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /Applications/MAMP/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /Applications/MAMP/framework/web/CController.php(291): CFilterChain->run()
+#17 /Applications/MAMP/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('profile/index')
+#20 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/clearmindapp.com/profile/index
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/06/17 04:55:27 [error] [exception.CException] exception 'CException' with message 'Property "CDetailView.cssClass" is not defined.' in /Applications/MAMP/framework/base/CComponent.php:173
+Stack trace:
+#0 /Applications/MAMP/framework/web/CWidgetFactory.php(161): CComponent->__set('cssClass', 'oink')
+#1 /Applications/MAMP/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(ProfileController), 'zii.widgets.CDe...', Array)
+#2 /Applications/MAMP/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#3 /Applications/MAMP/htdocs/clearmindapp.com/protected/views/profile/index.php(34): CBaseController->widget('zii.widgets.CDe...', Array)
+#4 /Applications/MAMP/framework/web/CBaseController.php(126): require('/Applications/M...')
+#5 /Applications/MAMP/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#6 /Applications/MAMP/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#7 /Applications/MAMP/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /Applications/MAMP/htdocs/clearmindapp.com/protected/controllers/ProfileController.php(43): CController->render('index', Array)
+#9 /Applications/MAMP/framework/web/actions/CInlineAction.php(49): ProfileController->actionIndex()
+#10 /Applications/MAMP/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Applications/MAMP/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /Applications/MAMP/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /Applications/MAMP/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /Applications/MAMP/framework/web/CController.php(291): CFilterChain->run()
+#17 /Applications/MAMP/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('index')
+#19 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('profile/index')
+#20 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/clearmindapp.com/profile/index
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/clearmind/index
+---
+2013/06/17 04:58:06 [error] [exception.CException] exception 'CException' with message 'Property "Profile.emailNewsLetter" is not defined.' in /Applications/MAMP/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/framework/db/ar/CActiveRecord.php(143): CComponent->__get('emailNewsLetter')
+#1 /Applications/MAMP/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('emailNewsLetter')
+#2 /Applications/MAMP/framework/web/helpers/CHtml.php(1506): CHtml::resolveValue(Object(Profile), 'emailNewsLetter')
+#3 /Applications/MAMP/framework/web/widgets/CActiveForm.php(747): CHtml::activeCheckBox(Object(Profile), 'emailNewsLetter', Array)
+#4 /Applications/MAMP/htdocs/clearmindapp.com/protected/views/profile/update.php(70): CActiveForm->checkBox(Object(Profile), 'emailNewsLetter')
+#5 /Applications/MAMP/framework/web/CBaseController.php(126): require('/Applications/M...')
+#6 /Applications/MAMP/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#7 /Applications/MAMP/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#8 /Applications/MAMP/framework/web/CController.php(782): CController->renderPartial('update', Array, true)
+#9 /Applications/MAMP/htdocs/clearmindapp.com/protected/controllers/ProfileController.php(86): CController->render('update', Array)
+#10 /Applications/MAMP/framework/web/actions/CInlineAction.php(49): ProfileController->actionUpdate()
+#11 /Applications/MAMP/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Applications/MAMP/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /Applications/MAMP/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Applications/MAMP/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /Applications/MAMP/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Applications/MAMP/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /Applications/MAMP/framework/web/CController.php(291): CFilterChain->run()
+#18 /Applications/MAMP/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('update')
+#20 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('profile/update')
+#21 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/clearmindapp.com/profile/update
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/profile/index
+---
+2013/06/17 04:58:23 [error] [exception.CException] exception 'CException' with message 'Property "Profile.emailNewsLetter" is not defined.' in /Applications/MAMP/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/framework/db/ar/CActiveRecord.php(143): CComponent->__get('emailNewsLetter')
+#1 /Applications/MAMP/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('emailNewsLetter')
+#2 /Applications/MAMP/framework/web/helpers/CHtml.php(1506): CHtml::resolveValue(Object(Profile), 'emailNewsLetter')
+#3 /Applications/MAMP/framework/web/widgets/CActiveForm.php(747): CHtml::activeCheckBox(Object(Profile), 'emailNewsLetter', Array)
+#4 /Applications/MAMP/htdocs/clearmindapp.com/protected/views/profile/update.php(70): CActiveForm->checkBox(Object(Profile), 'emailNewsLetter')
+#5 /Applications/MAMP/framework/web/CBaseController.php(126): require('/Applications/M...')
+#6 /Applications/MAMP/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#7 /Applications/MAMP/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#8 /Applications/MAMP/framework/web/CController.php(782): CController->renderPartial('update', Array, true)
+#9 /Applications/MAMP/htdocs/clearmindapp.com/protected/controllers/ProfileController.php(86): CController->render('update', Array)
+#10 /Applications/MAMP/framework/web/actions/CInlineAction.php(49): ProfileController->actionUpdate()
+#11 /Applications/MAMP/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Applications/MAMP/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /Applications/MAMP/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Applications/MAMP/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /Applications/MAMP/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Applications/MAMP/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /Applications/MAMP/framework/web/CController.php(291): CFilterChain->run()
+#18 /Applications/MAMP/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('update')
+#20 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('profile/update')
+#21 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/clearmindapp.com/profile/update
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/profile/index
+---
+2013/06/17 04:58:27 [error] [exception.CException] exception 'CException' with message 'Property "Profile.emailNewsLetter" is not defined.' in /Applications/MAMP/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/framework/db/ar/CActiveRecord.php(143): CComponent->__get('emailNewsLetter')
+#1 /Applications/MAMP/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('emailNewsLetter')
+#2 /Applications/MAMP/framework/web/helpers/CHtml.php(1506): CHtml::resolveValue(Object(Profile), 'emailNewsLetter')
+#3 /Applications/MAMP/framework/web/widgets/CActiveForm.php(747): CHtml::activeCheckBox(Object(Profile), 'emailNewsLetter', Array)
+#4 /Applications/MAMP/htdocs/clearmindapp.com/protected/views/profile/update.php(70): CActiveForm->checkBox(Object(Profile), 'emailNewsLetter')
+#5 /Applications/MAMP/framework/web/CBaseController.php(126): require('/Applications/M...')
+#6 /Applications/MAMP/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#7 /Applications/MAMP/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#8 /Applications/MAMP/framework/web/CController.php(782): CController->renderPartial('update', Array, true)
+#9 /Applications/MAMP/htdocs/clearmindapp.com/protected/controllers/ProfileController.php(86): CController->render('update', Array)
+#10 /Applications/MAMP/framework/web/actions/CInlineAction.php(49): ProfileController->actionUpdate()
+#11 /Applications/MAMP/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Applications/MAMP/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /Applications/MAMP/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Applications/MAMP/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /Applications/MAMP/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Applications/MAMP/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /Applications/MAMP/framework/web/CController.php(291): CFilterChain->run()
+#18 /Applications/MAMP/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('update')
+#20 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('profile/update')
+#21 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/clearmindapp.com/profile/update
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/profile/index
+---
+2013/06/17 04:58:42 [error] [exception.CException] exception 'CException' with message 'Property "Profile.birthday" is not defined.' in /Applications/MAMP/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/MAMP/framework/db/ar/CActiveRecord.php(143): CComponent->__get('birthday')
+#1 /Applications/MAMP/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('birthday')
+#2 /Applications/MAMP/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(Profile), 'birthday')
+#3 /Applications/MAMP/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(Profile), 'birthday', Array)
+#4 /Applications/MAMP/framework/zii/widgets/jui/CJuiDatePicker.php(82): CHtml::activeTextField(Object(Profile), 'birthday', Array)
+#5 /Applications/MAMP/framework/web/CBaseController.php(173): CJuiDatePicker->run()
+#6 /Applications/MAMP/htdocs/clearmindapp.com/protected/views/profile/update.php(95): CBaseController->widget('zii.widgets.jui...', Array)
+#7 /Applications/MAMP/framework/web/CBaseController.php(126): require('/Applications/M...')
+#8 /Applications/MAMP/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#9 /Applications/MAMP/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#10 /Applications/MAMP/framework/web/CController.php(782): CController->renderPartial('update', Array, true)
+#11 /Applications/MAMP/htdocs/clearmindapp.com/protected/controllers/ProfileController.php(86): CController->render('update', Array)
+#12 /Applications/MAMP/framework/web/actions/CInlineAction.php(49): ProfileController->actionUpdate()
+#13 /Applications/MAMP/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /Applications/MAMP/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 /Applications/MAMP/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /Applications/MAMP/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 /Applications/MAMP/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /Applications/MAMP/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 /Applications/MAMP/framework/web/CController.php(291): CFilterChain->run()
+#20 /Applications/MAMP/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('update')
+#22 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('profile/update')
+#23 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/clearmindapp.com/profile/update
+HTTP_REFERER=http://localhost:8888/clearmindapp.com/profile/index
+---
+2013/07/03 03:46:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tfs".' in /Applications/MAMP/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/framework/web/CController.php(270): CController->missingAction('tfs')
+#1 /Applications/MAMP/framework/web/CWebApplication.php(282): CController->run('tfs')
+#2 /Applications/MAMP/framework/web/CWebApplication.php(141): CWebApplication->runController('user/tfs')
+#3 /Applications/MAMP/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/clearmindapp.com/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/clearmindapp.com/user/tfs
+---

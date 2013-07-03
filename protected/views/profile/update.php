@@ -65,27 +65,7 @@ Yii::app()->clientScript->registerScript('avatarPreview','
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 	
-	<div class="row">
-	<?php echo $form->label($profile,'emailNewsLetter'); ?><br />
-	<?php echo $form->checkBox($profile, 'emailNewsLetter');?><br />
-	<?php echo $form->error($profile,'emailNewsLetter'); ?>
-	
-	</div>
-	
-	<div class="row">
-	<?php echo $form->label($profile,'emailUpdates'); ?><br />
-	<?php echo $form->checkBox($profile, 'emailUpdates');?><br />
-	<?php echo $form->error($profile,'emailUpdates'); ?>
-	
-	</div>
-	
-	<div class="row">
-	Receive email updates daily (as opposed to monthly):<br />
-	<?php echo $form->checkBox($profile, 'daily_emails');?><br />
-	<?php echo $form->error($profile,'daily_emails'); ?><br />
-	Note: This option is irrelevant if you have selected to NOT receive any emails.
-	
-	</div>
+
 
 	<div class="row">
 		<?php echo $form->labelEx($profile,'first_name'); ?><br />
@@ -100,21 +80,6 @@ Yii::app()->clientScript->registerScript('avatarPreview','
 	</div>
 
 	
-	<div class="row">
-		<?php echo $form->labelEx($profile,'birthday'); ?><br />
-		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-				'model'=>$profile,
-				'attribute'=>'birthday',
-				'options'=>array(
-						'showAnim'=>'fold',
-						'dateFormat'=>'yy-mm-dd',
-				),
-				'htmlOptions'=>array(
-						'style'=>'height:20px;'
-				),
-		));
-		?>
-	</div>
 	
 	<div class="row">
 	<?php echo CHtml::label('Avatar', false); ?><br />

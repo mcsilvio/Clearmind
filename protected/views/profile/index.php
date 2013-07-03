@@ -6,15 +6,14 @@
 	$imageExists = User::userHasAvatar(Yii::app()->user->id);
 	
 	$this->widget('zii.widgets.CDetailView', array(
+	//'cssFile' => Yii::app()->baseUrl .'/css/profile.css',
 	'data'=>$model,
+	//'htmlOptions' => array('class' => ''),
 	'attributes'=>array(
 		//'id',
 		//'username',
 		//'password',
 		'email',
-		'profile.emailNewsLetter',
-		'profile.emailUpdates',
-		'profile.daily_emails',
 		//'activationcode',
 		//'activated',
 		'profile.first_name',

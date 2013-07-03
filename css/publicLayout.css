@@ -77,3 +77,7 @@ h1{
 	height:100px;
 }
 
+.scrollable{
+	overflow:scroll;
+}
+
